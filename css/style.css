@@ -1,0 +1,141 @@
+/**
+----------------------
+## TABLE CONTNETS ##
+I. Layout
+--  01. Menu
+--  02. Footer
+I. Homepage
+--  01. Banner
+--  02. About Us
+--  03. Our Services
+--  04. Statistics
+--  05. Outstanding Project
+--  06. Customer Reviews
+--  07. Contact Us
+II. Contact
+--  01. Form Contact
+---------------------- **/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+/*-------------------------------------- Layout --------------------------------------*/
+
+/* 01. Menu */
+.menu__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  padding: 27px 46px;
+}
+.menu__content {
+  background-color: burlywood;
+  width: 100vw;
+}
+
+/* 02. Footer */
+.footer__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+.footer__content {
+  background-color: burlywood;
+  width: 1170px;
+}
+
+/*-------------------------------------- Homepage --------------------------------------*/
+
+/* 01. Banner */
+.homepage__banner__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+.homepage__banner__content {
+  background-color: burlywood;
+  width: 1700px;
+}
+
+/* 02. About Us */
+.homepage__about__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+.homepage__about__content {
+  background-color: burlywood;
+  width: 1170px;
+}
+
+/* 03. Our Services */
+.homepage__services__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+.homepage__services__content {
+  background-color: burlywood;
+  width: 1170px;
+}
+
+/* 04. Statistics */
+.homepage__statistics__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+.homepage__statistics__content {
+  background-color: burlywood;
+  width: 1170px;
+}
+
+/* 05. Outstanding Project */
+.homepage__project__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+.homepage__project__content {
+  background-color: burlywood;
+  width: 1170px;
+}
+
+/* 06. Customer Reviews */
+.homepage__reviews__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+.homepage__reviews__content {
+  background-color: burlywood;
+  width: 1170px;
+}
+
+/* 07. Contact Us */
+.homepage__contact__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+.homepage__contact__content {
+  background-color: burlywood;
+  width: 1170px;
+}
+
+/*-------------------------------------- Contact --------------------------------------*/
+
+/* 01. Form contact */
+.contact__container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+.contact__content {
+  background-color: burlywood;
+  width: 1170px;
+}
