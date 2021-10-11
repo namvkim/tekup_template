@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tekup__hompage</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -13,117 +17,220 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!-- bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <!-- jQuery -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
+
   <body>
-      <section class="menu__container">
-        <div class="menu__content">
-             <div class="menu__left">
-              <div>
-                <img src="./images/poiter.svg" alt="" />
-                <img
-                  class="menu__logo"
-                  src="./images/tekup.svg"
-                  alt=""
-                />
-              </div>
-                <select name="lang" id="menu__language" class="menu__language">
-                  <option value="vn">Tiếng việt</option>
-                  <option value="eng">English</option>
-                </select>
+    <section class="menu__container">
+      <div class="menu__content">
+        <div class="menu__left">
+          <div>
+            <img src="./images/poiter.svg" alt="" />
+            <img class="menu__logo" src="./images/tekup.svg" alt="" />
+          </div>
+          <select name="lang" id="menu__language" class="menu__language">
+            <option value="vn">Tiếng việt</option>
+            <option value="eng">English</option>
+          </select>
+        </div>
+        <label for="menu__checkbox" class="menu__right">
+          <img src="./images/bars.svg" alt="" />
+        </label>
+        <input type="checkbox" id="menu__checkbox" />
+        <div class="menu__main">
+          <label for="menu__checkbox" class="menu__main__close">
+            <img src="./images/Close.svg" alt="" />
+          </label>
+          <div class="menu__main__list">
+            content <br />
+            abc xyz <br />
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551438228969-H0FPV1FO3W5B0QL328AS/chup-anh-thuc-an-1.jpg"
+              alt="" width="300px" />
+          </div>
+          <div class="menu__main__footer">footer</div>
+        </div>
+      </div>
+    </section>
+    <section class="homepage__banner__container">
+      <div class="homepage__banner__content">
+        banner
+      </div>
+    </section>
+    <section class="homepage__about__container">
+      <div class="homepage__about__content">
+        about us
+      </div>
+    </section>
+
+    <section class="homepage__services__container">
+      <div class="homepage__services__content">
+        <small class="homepage__services__title">DỊCH VỤ</small>
+        <h1 class="homepage__services__underTitle"> Dịch vụ của chúng tôi </h1>
+        <p class="homepage__services__contentOfTitle">Tekup cam kết mang lại dịch vụ tốt nhất nhằm giúp doanh nghiệp của
+          bạn
+          phát
+          triển thần tốc</p>
+
+        <div class="homepage__services__tab">
+          <div class="homepage__services__tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
+            <div class="col-md-3">
+              <img class="homepage__services__imageTabs" src="./images/fingerprint.png" alt="">
             </div>
-            <label for="menu__checkbox" class="menu__right">
-              <img src="./images/bars.svg" alt="" />
-            </label>
-            <input type="checkbox" id="menu__checkbox" />
-            <div class="menu__main">
-              <label for="menu__checkbox" class="menu__main__close">
-                <img src="./images/Close.svg" alt="" />
-              </label>
-              <div class="menu__main__list">
-                content <br />
-                abc xyz <br />
-                <img
-                  src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551438228969-H0FPV1FO3W5B0QL328AS/chup-anh-thuc-an-1.jpg"
-                  alt=""
-                  width="300px"
-                />
-              </div>
-              <div class="menu__main__footer">footer</div>
+            <p class="col-md-9 homepage__services__containerTitleTabs">
+              <a class="homepage__services__titleTabs">Trí tuệ nhân tạo & Tầm nhìn máy tính
+              </a>
+            </p>
+          </div>
+          <div class="homepage__services__tablinks" onclick="openCity(event, 'Paris')">
+            <div class="col-md-3">
+              <img class="homepage__services__imageTabs" src="./images/fingerprint.png" alt="">
             </div>
+            <p class="col-md-9 homepage__services__containerTitleTabs">
+              <a class="homepage__services__titleTabs">Phát triển ứng dụng di động và web
+              </a>
+            </p>
+          </div>
+          <div class="homepage__services__tablinks" onclick="openCity(event, 'London')">
+            <div class="col-md-3">
+              <img class="homepage__services__imageTabs" src="./images/fingerprint.png" alt="">
+            </div>
+            <p class="col-md-9 homepage__services__containerTitleTabs">
+              <a class="homepage__services__titleTabs">Tư vấn quản lý
+              </a>
+            </p>
+          </div>
         </div>
-      </section>
-      <section class="homepage__banner__container">
-        <div class="homepage__banner__content">
-          banner
+        <div id="London" class="homepage__services__tabcontent">
+          <div class="homepage__services__tabs">
+            <img src="./images/Rectangle.png" alt="" style="width:100%;">
+            <div class="homepage__services__text__block">
+              a
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident architecto eligendi
+                excepturi, laudantium, quibusdam nesciunt cupiditate omnis quisquam nihil cum quis explicabo quam
+                nulla, odio eum laborum cumque repudiandae.</p>
+              <div class="homepage__services__frame">
+                <button class="homepage__services__custom-btn homepage__services__btn-1"> <a
+                    class="homepage__services__textBtn-1" style="color: black;">TÌM
+                    HIỂU THÊM</a>
+                  <img src="./images/Vector.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="homepage__about__container">
-        <div class="homepage__about__content">
-          about us
+        <div id="Paris" class="homepage__services__tabcontent">
+          <div class="homepage__services__tabs">
+            <img src="./images/Rectangle.png" alt="" style="width:100%;">
+            <div class="homepage__services__text__block">
+              b
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident architecto eligendi
+                excepturi, laudantium, quibusdam nesciunt cupiditate omnis quisquam nihil cum quis explicabo quam
+                nulla, odio eum laborum cumque repudiandae.</p>
+              <div class="homepage__services__frame">
+                <button class="homepage__services__custom-btn homepage__services__btn-1"> <a
+                    class="homepage__services__textBtn-1" style="color: black;">TÌM
+                    HIỂU THÊM</a> <img src="./images/Vector.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="homepage__services__container">
-        <div class="homepage__services__content">
-          services
+        <div id="Tokyo" class="homepage__services__tabcontent">
+          <div class="homepage__services__tabs">
+            <img src="./images/Rectangle.png" alt="" style="width:100%;">
+            <div class="homepage__services__text__block">
+              c
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident architecto eligendi
+                excepturi, laudantium, quibusdam nesciunt cupiditate omnis quisquam nihil cum quis explicabo quam
+                nulla, odio eum laborum cumque repudiandae.</p>
+              <div class="homepage__services__frame">
+                <button class="homepage__services__custom-btn homepage__services__btn-1"> <a
+                    class="homepage__services__textBtn-1" style="color: black;">TÌM
+                    HIỂU THÊM</a> <img src="./images/Vector.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="homepage__statistics__container">
-        <div class="homepage__statistics__content">
-          statistics
+      </div>
+    </section>
+
+    <section class="homepage__statistics__container">
+      <div class="homepage__statistics__content">
+        <div>
+          <div class="homepage__statistics__number">
+            <span class="counter ">100</span>
+          </div>
+          <div class="homepage__statistics__title">Impactful Products</div>
         </div>
-      </section>
-      <section class="homepage__project__container">
-        <div class="homepage__project__content">
-          project
+        <div>
+          <div class="homepage__statistics__number">
+            <span class="counter ">450</span>
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </div>
+          <div class="homepage__statistics__title">Successful Projects</div>
         </div>
-      </section>
-      <section class="homepage__reviews__container">
-        <div class="homepage__reviews__content">
-          reviews
+        <div>
+          <div class="homepage__statistics__number">
+            <span class="counter ">50</span>
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </div>
+          <div class="homepage__statistics__title">Happy Clients</div>
         </div>
-      </section>
-      <section class="homepage__contact__container">
-        <div class="homepage__contact__content">
-          contact
+        <div>
+          <div class="homepage__statistics__number">
+            <span class="counter ">80</span>
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </div>
+          <div class="homepage__statistics__title">Company Awards</div>
         </div>
-      </section>
-      <section class="footer__container">
-        <div class="footer__content">
-          footer
-        </div>
-      </section>
+      </div>
+    </section>
+
+    <section class="homepage__project__container">
+      <div class="homepage__project__content">
+        project
+      </div>
+    </section>
+    <section class="homepage__reviews__container">
+      <div class="homepage__reviews__content">
+        reviews
+      </div>
+    </section>
+    <section class="homepage__contact__container">
+      <div class="homepage__contact__content">
+        contact
+      </div>
+    </section>
+    <section class="footer__container">
+      <div class="footer__content">
+        footer
+      </div>
+    </section>
     </div>
   </body>
 
   <script src="./js/script.js"></script>
-
   <!-- bootstrap 5 -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
+
 </html>
