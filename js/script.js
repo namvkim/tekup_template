@@ -1,6 +1,6 @@
-// carosel for logo in banner 
+// carosel for logo in banner (nam)
 let items = document.querySelectorAll(
-    ".hompage_banner_logo .carousel .carousel-item"
+    ".hompage__banner__logo .carousel .carousel-item"
 );
 
 items.forEach((el) => {
