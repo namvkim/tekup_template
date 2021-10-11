@@ -34,6 +34,64 @@ II. Contact
 .menu__content {
   background-color: burlywood;
   width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__left {
+  display: flex;
+  align-items: center;
+}
+.menu__logo {
+  margin-left: 8px;
+}
+.menu__language {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 40px;
+  outline: none;
+}
+.menu__right {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f8d000;
+  cursor: pointer;
+}
+#menu__checkbox {
+  display: none;
+}
+#menu__checkbox:checked ~ .menu__main {
+  min-width: 737px;
+  transform: translateX(0%);
+}
+.menu__main {
+  height: 100vh;
+  transform: translateX(100%);
+  background-color: #f2f2f2;
+
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 30;
+  padding: 70px 90px 110px 140px;
+  transition: all 0.35s ease 0s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu__main__list {
+}
+.menu__main__close {
+  text-align: right;
 }
 
 /* 02. Footer */

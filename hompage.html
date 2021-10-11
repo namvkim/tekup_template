@@ -30,7 +30,39 @@
   <body>
       <section class="menu__container">
         <div class="menu__content">
-          menu
+             <div class="menu__left">
+              <div>
+                <img src="./images/poiter.svg" alt="" />
+                <img
+                  class="menu__logo"
+                  src="./images/tekup.svg"
+                  alt=""
+                />
+              </div>
+                <select name="lang" id="menu__language" class="menu__language">
+                  <option value="vn">Tiếng việt</option>
+                  <option value="eng">English</option>
+                </select>
+            </div>
+            <label for="menu__checkbox" class="menu__right">
+              <img src="./images/bars.svg" alt="" />
+            </label>
+            <input type="checkbox" id="menu__checkbox" />
+            <div class="menu__main">
+              <label for="menu__checkbox" class="menu__main__close">
+                <img src="./images/Close.svg" alt="" />
+              </label>
+              <div class="menu__main__list">
+                content <br />
+                abc xyz <br />
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551438228969-H0FPV1FO3W5B0QL328AS/chup-anh-thuc-an-1.jpg"
+                  alt=""
+                  width="300px"
+                />
+              </div>
+              <div class="menu__main__footer">footer</div>
+            </div>
         </div>
       </section>
       <section class="homepage__banner__container">
@@ -75,6 +107,8 @@
       </section>
     </div>
   </body>
+
+  <script src="./js/script.js"></script>
 
   <!-- bootstrap 5 -->
   <script
