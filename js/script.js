@@ -16,3 +16,4 @@ items.forEach((el) => {
         next = next.nextElementSibling;
     }
 });
+
