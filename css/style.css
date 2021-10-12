@@ -245,7 +245,7 @@ II. Contact
   width: 1170px;
   display: flex;
   justify-content: space-between;
-  margin: 0 0 0 240px;
+  /* margin: 0 0 0 240px; */
 }
 .contact__image img{
   width: 674px;
@@ -344,4 +344,8 @@ II. Contact
 .contact__select{
   display: flex;
 }
-/*  */
+.contact__icon{
+  margin-right: 12px;
+  margin-bottom: 16px;
+  border: 0.4px solid #ffffff;
+}
