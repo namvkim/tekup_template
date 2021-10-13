@@ -31,8 +31,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("perfectservices__mySlides");
-  var dots = document.getElementsByClassName("perfect__dot");
+  var slides = document.getElementsByClassName("homepage__reviews__mySlides");
+  var dots = document.getElementsByClassName("homepage__reviews__dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

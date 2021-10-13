@@ -190,7 +190,7 @@ II. Contact
   padding-bottom: 248px;
 }
 
-.perfectservices__p-4 {
+.homepage__reviews__p-4 {
   background-color: white;
   border-radius: 5px 5px 5px 0px;
   -webkit-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
@@ -278,52 +278,52 @@ II. Contact
   
 }
 
-.perfectservices__block {
+.homepage__reviews__block {
   margin-left: 10px;
   color: #333333; 
 }
 
-.perfectservices__mySlides {
+.homepage__reviews__mySlides {
   padding-bottom: 70px;
 }
 
-.perfect__remark {
+.homepage__reviews__remark {
   padding-top:20px;
   color: #0B0D27;;
 }
-.perfect__remark .checked {
+.homepage__reviews__remark .checked {
   color: #F8D000;
   font-size: 24px;
   padding-bottom: 24px ;
 }
 
-.perfectservices__flex {
+.homepage__reviews__flex {
   display: flex;
   padding: 1.5rem;
 }
 
-.perfectservices__flex .w-10 {
+.homepage__reviews__flex .w-10 {
   width: 2.5rem;
 }
 
-.perfectservices__flex .rounded-full {
+.homepage__reviews__flex .rounded-full {
   border-radius: 50%;
 }
 
-.perfectservices__block .text-base {
+.homepage__reviews__block .text-base {
   font-weight: 700;
   line-height: 26px;
   font-size: 18px;
 }
 
-.perfectservices__block .text-xs {
+.homepage__reviews__block .text-xs {
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
 }
 
 
-.perfect__text {
+.homepage__reviews__text {
   font-size: 16px;
   line-height: 19.2px;
   font-weight: 700;
@@ -331,14 +331,14 @@ II. Contact
   padding-bottom:20px;
 }
 
-.perfect__textmini {
+.homepage__reviews__textmini {
   font-size: 48px;
   line-height: 58px;
   font-weight: 700;
   color: #0b0d27;
 }
 
-.perfect__describe {
+.homepage__reviews__describe {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
@@ -347,7 +347,7 @@ II. Contact
   font-weight: normal;
 }
 
-.perfect__dot {
+.homepage__reviews__dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
