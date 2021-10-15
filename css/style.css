@@ -155,7 +155,8 @@ II. Contact
 }
 
 .homepage__services__containerTab button.active {
-  background: #f3f0f0;
+  background: #ffffff;
+  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .homepage__services__containerTab button.active .homepage__services__boxImage {
@@ -236,6 +237,11 @@ II. Contact
   margin-left: 23px;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .homepage__services__tabs {
@@ -251,15 +257,13 @@ II. Contact
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: Barlow;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
 }
 
-.homepage__services__frame {
-  text-align: center;
-}
 .homepage__services__custom-btn {
   position: absolute;
   width: 205px;
@@ -269,7 +273,14 @@ II. Contact
   border: 0px solid #000;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-left: 100px;
+  right: -31px;
+  bottom: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homepage__services__custom-btn img {
+  margin-left: 12px;
 }
 .homepage__services__textBtn-1 {
   text-decoration: none;
@@ -281,8 +292,12 @@ II. Contact
   line-height: 28px;
   color: #0b0d27;
 }
-.homepage__services__btn-1:hover {
-  box-shadow: 4px 5px 6px 7px white;
+
+.homepage__services__imageContentTab {
+  width: 770px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* 04. Statistics */
@@ -290,6 +305,9 @@ II. Contact
   display: flex;
   justify-content: center;
   background: url(../images/istockphoto-1330509505-640_adpp_is\ 1.svg);
+  object-fit: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .homepage__statistics__content {
   width: 1170px;
