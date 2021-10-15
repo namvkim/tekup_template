@@ -219,19 +219,17 @@ II. Contact
   background-image: url('../images/fingerPrint1.svg');
   background-repeat: no-repeat;
 }
-
+.homepage__services__custom-btn:hover {
+  background-color: #ffe24b;
+}
 .homepage__services__containerBox:hover {
-  box-shadow: 1px 10px 5px rgb(255, 252, 252);
+  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
 }
 .homepage__services__containerBox {
   padding: 0;
   display: flex;
 }
 
-.homepage__services__box:hover {
-  background: #ffffff;
-  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
-}
 .homepage__services__boxText {
   width: 210px;
   height: 64px;
