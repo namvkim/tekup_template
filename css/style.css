@@ -228,11 +228,14 @@ II. Contact
 .homepage__services__containerBox {
   padding: 0;
   display: flex;
+  /* background-color: aquamarine; */
 }
 
 .homepage__services__boxText {
   width: 210px;
   height: 64px;
+  display: flex;
+  align-items: center;
   margin-left: 23px;
   margin-top: 15px;
   margin-bottom: 15px;
