@@ -221,7 +221,7 @@ II. Contact
 }
 
 .homepage__services__containerBox:hover {
-  box-shadow: 1px 10px 5px white;
+  box-shadow: 1px 10px 5px rgb(255, 252, 252);
 }
 .homepage__services__containerBox {
   padding: 0;
@@ -229,7 +229,8 @@ II. Contact
 }
 
 .homepage__services__box:hover {
-  box-shadow: 1px 10px 5px white;
+  background: #ffffff;
+  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
 }
 .homepage__services__boxText {
   width: 210px;
