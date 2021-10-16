@@ -153,11 +153,6 @@ II. Contact
 }
 
 /* 05. Outstanding Project */
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Barlow", sans-serif;
-}
 .homepage__project__container_title {
   display: flex;
   justify-content: center;
@@ -197,7 +192,6 @@ II. Contact
   width: 100%;
 }
 
-/*khưa*/
 .homepage__project__title p {
   font-family: Barlow;
   font-style: normal;
@@ -277,7 +271,7 @@ II. Contact
   height: 10px;
   margin: 5px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
   position: relative;
 }
 .homepage__project__slider .owl-carousel .owl-dots .owl-dot:hover,
@@ -285,7 +279,7 @@ II. Contact
   outline: none !important;
 }
 .homepage__project__slider .owl-carousel .owl-dots .owl-dot.active {
-  background: #ff5959;
+  /* background: #ff5959; */
 }
 
 .homepage__project__slider .owl-carousel.owl-drag .owl-item {
@@ -297,13 +291,13 @@ II. Contact
   text-align: center !important;
 }
 
-.homepage__project__slider .thumbnail {
+.homepage__project__slider .homepage__project_thumbnail .thumbnail {
   list-style: none;
   padding: 0;
   margin: 0;
   position: absolute;
-  bottom: -65%;
-  left: 26.5%; /* left: 50%;  */
+  bottom: -70%;
+  left: 27%; /* left: 50%;  */
   -webkit-transform: translateY(50%) translateX(-50%);
   -ms-transform: translateY(50%) translateX(-50%);
   transform: translateY(50%) translateX(-50%);
@@ -311,11 +305,11 @@ II. Contact
   width: 100%;
 }
 
-.homepage__project__slider .thumbnail li {
+.homepage__project__slider .homepage__project_thumbnail .thumbnail li {
   display: inline-block;
 }
 
-.homepage__project__slider .thumbnail li a {
+.homepage__project__slider .homepage__project_thumbnail .thumbnail li a {
   display: block;
   margin: 4px;
   width: 100%;
@@ -328,15 +322,20 @@ II. Contact
   text-align: center;
   text-decoration: none;
 }
-.homepage__project__slider .thumbnail li a p {
+.homepage__project__slider .homepage__project_thumbnail .thumbnail li a p {
   padding-top: 164px;
 }
 
-.homepage__project__slider .thumbnail li a img {
+.homepage__project__slider .homepage__project_thumbnail .thumbnail li a img {
   width: 100px;
 }
 
-.homepage__project__slider .thumbnail li.active a img {
+.homepage__project__slider
+  .homepage__project_thumbnail
+  .thumbnail
+  li.active
+  a
+  img {
   border: 4px solid #fff;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -345,22 +344,23 @@ II. Contact
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 767.98px) {
-  .homepage__project__slider .thumbnail li a img {
+  .homepage__project__slider .homepage__project_thumbnail .thumbnail li a img {
     width: 50px;
   }
 }
 
 .homepage__work-project {
+  background-color: #c42c2c;
+  background-image: url("../images/baoden.svg");
   width: 100%;
 }
 
 .homepage__work-project .img {
-  background: #c42c2c;
   width: 100%;
   height: 500px;
   position: relative;
   z-index: 0;
-  overflow: hidden;
+  overflow: visible;
   -webkit-box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
   box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
@@ -379,17 +379,43 @@ II. Contact
 
 .homepage__work-project .text {
   position: absolute;
-  left: 12.5%;
+  color: #ffffff;
+  top:70px;
+  left: 13.5%;
+}
+
+.homepage__work-project .text h5 {
+  width: 87px;
+  height: 19px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
 }
 .homepage__work-project .text h2 {
+  width: 235px;
+  height: 77px;
   font-family: Barlow;
-  font-size: 60px;
-  font-weight: 200;
-  color: #ffffff;
+  font-size: 64px;
+  line-height: 77px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.homepage__work-project .text p {
+  width: 465px;
+  height: 94px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .homepage__work-project .text .text-project a {
   display: inline-block;
+  width: 194px;
   font-family: Barlow;
   font-style: normal;
   font-weight: bold;
@@ -397,12 +423,20 @@ II. Contact
   line-height: 28px;
   color: #ffffff;
   padding: 12px 20px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   transition: all 0.3s;
   border: groove 2px #ffffff;
   border-radius: 5px;
   text-decoration: none;
+}
+
+.homepage__work-project .text .text-project a img {
+  position: absolute;
+  bottom: 4%;
+  left: 28.5%;
+  width: 10%;
+  height: 10%;
 }
 @media (max-width: 991.98px) {
   .homepage__work-project .text h2 {
@@ -439,21 +473,55 @@ II. Contact
   height: auto;
 }
 
+.homepage__work-project .flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.homepage__work-project .flex-container .image-product {
+  position: absolute;
+  width: 399.02px;
+  height: 648.62px;
+  left: 1173.36px;
+  filter: drop-shadow(40px -14px 42px rgba(0, 0, 0, 0.15));
+}
+
+.homepage__work-project .flex-container .image-product .rectangleBig {
+  position: absolute;
+  width: 253.92px;
+  height: 176.84px;
+  left: -137px;
+  top: 185px;
+  background: #ffffff;
+  box-shadow: 12px 10px 22px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+}
+
+.homepage__work-project .flex-container .image-product .rectangleSmall {
+  position: absolute;
+  width: 253.92px;
+  height: 96.35px;
+  left: 188px;
+  top: 357px;
+  background: #ffffff;
+  box-shadow: 12px 10px 22px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+}
+
 .homepage__project_thumbnail {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
-  height: auto;
 }
 
 @media only screen and (min-width: 1900px) {
+  /*1147*/
   .homepage__work-project .text {
     position: absolute;
     left: 19%;
   }
-  .homepage__project__slider .thumbnail { 
+  .homepage__project__slider .homepage__project_thumbnail .thumbnail {
     position: absolute;
-    bottom: -75%;
-    left: 30.5%; /* left: 50%;  */
+    bottom: -1%;
+    left: 30.5%;
   }
 }
 
@@ -468,21 +536,17 @@ II. Contact
   width: 1170px;
 }
 
-
-
 /* 07. Contact Us */
-#homepage__contact_contain {
-  padding: 80px 0px;
-  background-image: url(../images/cta-bg.jpg);
+.homepage__contact__container {
+  display: flex;
+  justify-content: center;
+  padding: 120px 0px;
+  background-image: url(../images/development.svg);
+  background-color: #0b0d27;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-}
-
-.homepage__contact__container {
-  display: flex;
-  justify-content: center;
 }
 
 .homepage__contact__content {
@@ -501,19 +565,25 @@ II. Contact
 
 .home__contact__button a {
   display: inline-block;
+  width: 403.83px;
   font-size: 24px;
   font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   line-height: 28px;
-  padding: 12px 20px;
+  padding: 16px 30px;
   background: #f8d000;
   color: #0b0d27;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   transition: all 0.3s;
   border-radius: 5px;
   text-decoration: none;
+}
+
+.home__contact__button a img {
+  position: absolute;
+  padding-left: 0.5%;
 }
 
 @media only screen and (min-width: 1900px) {
@@ -524,6 +594,12 @@ II. Contact
   .home__contact__button a {
     font-size: 24px;
     line-height: 28px;
+    width: 403.83px;
+    padding: 16px 30px;
+  }
+  .home__contact__button a img {
+    position: absolute;
+    padding-left: 0.5%;
   }
 }
 
