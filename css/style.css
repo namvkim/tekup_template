@@ -185,14 +185,14 @@ II. Contact
 }
 
 .homepage__project__container {
-  background-image: url(../images/baoden.svg);
-  background-color: #c42c2c;
+  background: #c42c2c url(../images/Bao.png) no-repeat left center;
+  background-position: 0% 30%;
   display: flex;
   justify-content: center;
   height: 586px;
 }
+
 .homepage__project__content {
-  /* background-color: burlywood; */
   width: 1170px;
   height: 586px;
 }
