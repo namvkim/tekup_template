@@ -152,6 +152,7 @@ II. Contact
   cursor: pointer;
   transition: 0.3s;
   font-size: 17px;
+  box-shadow: #fffdfa;
 }
 
 .homepage__services__containerTab button.active {
@@ -254,11 +255,10 @@ II. Contact
 }
 .homepage__services__text__block {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  width: 695px;
+  bottom: 50px;
+  margin-left: 38px;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: Barlow;
   font-style: normal;
   font-weight: 500;
