@@ -154,8 +154,8 @@ II. Contact
 
 .homepage__about__stroke3 {
   position: absolute;
-  top: 50%;
-  left: 16%;
+  /* padding-right: 894px; */
+   /* margin-right: 894px; */
 }
 
 .homepage__about__image img{
@@ -276,11 +276,12 @@ II. Contact
   width: 674px;
   height: 775px;
   border-radius: 10px;
+  margin-top: 136px;
   margin-bottom: 170px;
 }
 .contact__form{
   width: 666px;
-  padding-top: 102px;
+  margin-top: 238px;
   padding-right: 10px;
 }
 
