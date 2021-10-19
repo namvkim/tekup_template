@@ -128,8 +128,15 @@ III. Contact
   justify-content: center;
   align-items: center;
 
-  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-6-beautiful-background-photos-image_263872.jpg");
-  background-size: cover;
+  /* background-image: url("./images/tekup_banner.svg");
+  background-size: cover; */
+  position: relative;
+}
+.homepage__banner__img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 .homepage__banner__content {
   width: 1700px;
@@ -140,7 +147,7 @@ III. Contact
   position: absolute;
   right: 0;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .homepage__banner__carousel {
