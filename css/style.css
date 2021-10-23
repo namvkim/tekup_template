@@ -328,15 +328,86 @@ VII. Service
 
 /* 02. About Us */
 .homepage__about__container {
-  background-color: aquamarine;
+  background-color: #0b0d27;
   display: flex;
   justify-content: center;
 }
 .homepage__about__content {
-  background-color: burlywood;
   width: 1170px;
+  margin: 140px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
+.homepage__about__stroke1 {
+  position: absolute;
+  left: 0;
+  padding-bottom: 0;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.homepage__about__stroke2 {
+  position: absolute;
+  right: 0;
+  padding-top: 218px;
+}
+
+.homepage__about__stroke3 {
+  position: absolute;
+  /* padding-right: 894px; */
+  /* margin-right: 894px; */
+}
+
+.homepage__about__image img {
+  width: 487px;
+  height: 319px;
+  border-radius: 10px;
+}
+.homepage__about__text {
+  width: 630px;
+  padding-top: 19px;
+}
+.homepage__about__top {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: #f8d000;
+  margin-bottom: 20px;
+}
+.homepage__about__mid {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.homepage__about__title1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.homepage__about__title2 {
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+  margin-bottom: 41px;
+}
+.homepage__about__footer {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  text-align: right;
+}
 /* 03. Our Services */
 .homepage__services__container {
   background-color: aquamarine;
@@ -396,13 +467,121 @@ VII. Service
 
 /* 01. Form contact */
 .contact__container {
-  background-color: aquamarine;
   display: flex;
   justify-content: center;
+  /* margin: 69px 0 170px; */
 }
 .contact__content {
-  background-color: burlywood;
-  width: 1170px;
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__image img {
+  width: 674px;
+  height: 775px;
+  border-radius: 10px;
+  margin-top: 136px;
+  margin-bottom: 170px;
+}
+.contact__form {
+  width: 666px;
+  margin-top: 238px;
+  padding-right: 10px;
+}
+
+.contact__top {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: #0b0d27;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.contact__mid {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: -0.01em;
+  color: #0b0d27;
+  margin-bottom: 30px;
+}
+.contact__title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+  margin-bottom: 64px;
+}
+.contact__content__form1 {
+  display: flex;
+}
+.contact__content__form2 {
+  width: 591px;
+  outline: none;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.contact__content__form3 {
+  display: flex;
+  width: 591px;
+  outline: none;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.contact__input__group1 {
+  display: flex;
+  width: 280px;
+  outline: none;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.contact__input__group2 {
+  display: flex;
+  width: 280px;
+  outline: none;
+  margin-bottom: 35px;
+  margin-left: 30px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.contact__input__style {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-family: "Barlow";
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.contact__btn__warning {
+  background-color: rgba(248, 208, 0, 1);
+  border: 5px solid rgba(248, 208, 0, 1);
+  padding: 16px 30px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 5px;
+}
+
+.contact__select {
+  display: flex;
+}
+.contact__icon {
+  margin-right: 12px;
+  margin-bottom: 16px;
+  border: 0.4px solid #ffffff;
+}
+
+#contact__select__box {
+  width: 100%;
+  outline: none;
+  border: none;
+  /* -webkit-appearance: none; */
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 12px;
 }
 
 /*-------------------------------------- About --------------------------------------*/
