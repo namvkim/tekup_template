@@ -1,20 +1,20 @@
 // carosel for logo in banner (nam)
 let items = document.querySelectorAll(
-    ".hompage__banner__logo .carousel .carousel-item"
+  ".hompage__banner__logo .carousel .carousel-item"
 );
 
 items.forEach((el) => {
-    const minPerSlide = 5;
-    let next = el.nextElementSibling;
-    for (var i = 1; i < minPerSlide; i++) {
-        if (!next) {
-            // wrap carousel by using first child
-            next = items[0];
-        }
-        let cloneChild = next.cloneNode(true);
-        el.appendChild(cloneChild.children[0]);
-        next = next.nextElementSibling;
+  const minPerSlide = 5;
+  let next = el.nextElementSibling;
+  for (var i = 1; i < minPerSlide; i++) {
+    if (!next) {
+      // wrap carousel by using first child
+      next = items[0];
     }
+    let cloneChild = next.cloneNode(true);
+    el.appendChild(cloneChild.children[0]);
+    next = next.nextElementSibling;
+  }
 });
 
 //start Hoa write carosel for perfect service
@@ -26,15 +26,53 @@ function showSlides() {
   var slides = document.getElementsByClassName("homepage__reviews__mySlides");
   var dots = document.getElementsByClassName("homepage__reviews__dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) { slideIndex = 1 }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace("activeperfect", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " activeperfect";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " activeperfect";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 //end Hoa write
+
+// services
+$(document).ready(function () {
+  $('.counter').each(function () {
+    $(this)
+      .prop('Counter', 0)
+      .animate(
+        {
+          Counter: $(this).text(),
+        },
+        {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          },
+        }
+      );
+  });
+});
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName(
+    'homepage__services__tabcontent'
+  );
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = 'none';
+  }
+  tablinks = document.getElementsByClassName('tablinks');
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(' active', '');
+  }
+  document.getElementById(cityName).style.display = 'block';
+  evt.currentTarget.className += ' active';
+}
+
+document.getElementById('defaultOpen').click();
