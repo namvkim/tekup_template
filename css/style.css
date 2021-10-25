@@ -504,6 +504,21 @@ VII. Service
 }
 
 /* end about IT development quynh*/
+
+/* Start about us Hoa */
+.about_text_ITdevelop{
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.01em;
+
+}
+.hoa {
+  text-align: center;
+}
+/* End about us Hoa */
 /*-------------------------------------- Project --------------------------------------*/
 /*-------------------------------------- Project Details --------------------------------------*/
 /*-------------------------------------- Service --------------------------------------*/
