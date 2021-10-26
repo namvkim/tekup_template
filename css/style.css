@@ -353,7 +353,7 @@ VII. Service
   justify-content: center;
 }
 .homepage__statistics__content {
-  background-color: burlywood;
+  /* background-color: burlywood; */
   width: 1170px;
 }
 
@@ -446,7 +446,7 @@ VII. Service
 }
 .about_cursorImages {
   width: 210px;
-  margin: 60px 0px 60px 27px;
+  margin: 60px 0px 60px 5px;
 }
 .about__title_position {
   margin-top: 20px;
@@ -482,6 +482,12 @@ VII. Service
   display: flex;
   justify-content: space-evenly;
 }
+.about__statistics__content {
+  width: 1170px;
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-evenly;
+}
 .homepage__statistics__number {
   display: flex;
   align-items: center;
@@ -501,6 +507,26 @@ VII. Service
   font-weight: 600;
   font-size: 18px;
   line-height: 21px;
+}
+.about_images_counter {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.about__number__counter {
+  padding-top: 100px;
+}
+.about_title_counter {
+  max-width: 471px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
 }
 
 /* end about IT development quynh*/
