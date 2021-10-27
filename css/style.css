@@ -546,7 +546,7 @@ VII. Service
 }
 
 .hero-image {
-  background-image: url("/images/Rectangle\ 59.png");
+  background-image: url("../images/aboutbg.png");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -561,8 +561,18 @@ VII. Service
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+} 
+
+#video {
+  /* position: fixed; */
+  right: 0;
+  bottom: 0;
 }
-/* End about us Hoa */
+
+.hhh {
+  
+}
+/* End about us Hoa
 /*-------------------------------------- Project --------------------------------------*/
 /*-------------------------------------- Project Details --------------------------------------*/
 /*-------------------------------------- Service --------------------------------------*/
