@@ -76,3 +76,18 @@ function openCity(evt, cityName) {
 }
 
 document.getElementById('defaultOpen').click();
+
+//menu scroll
+
+function menuScroll() {
+  if (window.scrollY > 0) {
+    document.getElementById('menu__container').style.backgroundColor = "white";
+    document.getElementById('menu__container').style.boxShadow = "0 0 9px rgb(0 0 0 / 15%)";
+  } else {
+    document.getElementById('menu__container').style.backgroundColor = "";
+    document.getElementById('menu__container').style.boxShadow = "";
+
+  }
+}
+
+window.addEventListener('scroll', menuScroll)
