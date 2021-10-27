@@ -23,7 +23,7 @@ VII. Service
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   /* color: #0b0d27; */
 }
 
@@ -300,7 +300,7 @@ VII. Service
 }
 .homepage__banner__logo__slider::after {
   background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 96.83%);
-  content: '';
+  content: "";
   height: 50px;
   width: 500px;
 
@@ -405,19 +405,29 @@ VII. Service
 
 /*-------------------------------------- About --------------------------------------*/
 /* start about IT development quynh */
-.about_images_ITDevelop {
-  max-width: 1170px;
+.about__staff__container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
 }
-.about_title_ITdevelop {
+
+.about__staff__content {
+  width: 1170px;
+}
+
+.about__staff__title {
   max-width: 676px;
-  font-family: Barlow;
-  font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: -0.01em;
   margin-bottom: 50px;
 }
+
+.about_images_ITDevelop {
+  max-width: 1170px;
+}
+
 .about_col1 {
   max-width: 624px;
 }
@@ -443,10 +453,10 @@ VII. Service
   max-width: 1158px;
   display: flex;
   justify-content: flex-start;
+  margin-top: 60px;
 }
 .about_cursorImages {
-  width: 210px;
-  margin: 60px 0px 60px 5px;
+  width: 20%;
 }
 .about__title_position {
   margin-top: 20px;
@@ -485,8 +495,8 @@ VII. Service
 .about__statistics__content {
   width: 1170px;
   display: flex;
-  margin-top: 60px;
   justify-content: space-evenly;
+  margin: 0 auto;
 }
 .homepage__statistics__number {
   display: flex;
@@ -508,121 +518,161 @@ VII. Service
   font-size: 18px;
   line-height: 21px;
 }
-.about_images_counter {
-  position: absolute;
+
+.about__number__container {
+  position: relative;
+  padding: 100px 0;
+}
+
+.about__images__counter {
   width: 100%;
-  object-fit: cover;
+  height: 415px;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
-.about__number__counter {
-  padding-top: 100px;
-}
-.about_title_counter {
-  max-width: 471px;
-  font-family: Barlow;
-  font-style: normal;
+
+.about__title__counter {
   font-weight: bold;
   font-size: 48px;
   line-height: 58px;
-  margin-left: auto;
-  margin-right: auto;
-  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 /* end about IT development quynh*/
 
 /* Start about us Hoa */
-.about_text_ITdevelop{
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 58px;
-  letter-spacing: -0.01em;
 
-}
-.hoa {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px
-}
-
-.hero-image {
-  background-image: url("../images/aboutbg.png");
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.about__title__container {
+  padding: 207px 0 80px 0;
+  display: flex;
+  justify-content: center;
   position: relative;
-  margin-top: 15rem;
 }
 
-.hero-text {
-  text-align: center;
+.about__title__img {
+  height: 691px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-} 
-
-.about_container {
-  background-image: url("../images/bgaboutvideo.jpg");
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-#about_child_container {
-  position: absolute;
-  top: 20%;
+  top: 0;
+  left: 0;
   width: 100%;
-  text-align: center;
+  z-index: -1;
+}
+
+.about__title__content {
+  width: 1170px;
+}
+
+.about__title__header {
   font-size: 64px;
   line-height: 74px;
   letter-spacing: -0.01em;
-  color: #0B0D27;
-  font-weight: bold;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 207px;
 }
 
+.about__title__body {
+  display: flex;
+  justify-content: space-between;
+}
 
-
-.child_text {
-  font-family: Barlow;
-  font-style: normal;
+.about__title__body__left {
+  width: 470px;
   font-weight: bold;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: -0.01em;
-  color: #0B0D27;
 }
 
-.about_content {
-  margin-left: 20rem;
-  margin-right: 20rem;
-  display: flex;
-  margin-top: 5rem;
+.about__title__body__right {
+  width: 570px;
 }
 
-.mini_text {
-  font-family: Barlow;
-  font-style: normal;
+.about__title__body__title {
   font-weight: bold;
   font-size: 24px;
   line-height: 34px;
-  letter-spacing: -0.01em;  
-  color: #0B0D27;
+  letter-spacing: -0.01em;
 }
 
-.about_text {
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: normal;
+.about__title__body__content {
   font-size: 18px;
   line-height: 28px;
-  color: #0B0D27;
+}
+
+.about__value__container {
+  padding: 160px 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+
+  background: linear-gradient(
+      0deg,
+      rgba(11, 13, 39, 0.8),
+      rgba(11, 13, 39, 0.8)
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/aboutbg.png");
+}
+
+.about__value__content {
+  color: white;
+  text-align: center;
+}
+
+.about__value__title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin-top: 48px;
+}
+
+.about__value__subtitle {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.about__direction__container {
+  display: flex;
+  justify-content: center;
+}
+
+.about__direction__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  width: 1170px;
+}
+
+.about__direction__left,
+.about__direction__right {
+  width: 500px;
+  text-align: center;
+}
+
+.about__direction__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.01em;
+  margin-top: 30px;
+}
+
+.about__direction__subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 16px;
 }
 /* End about us Hoa
 /*-------------------------------------- Project --------------------------------------*/
