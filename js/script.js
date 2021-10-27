@@ -90,4 +90,3 @@ function menuScroll() {
   }
 }
 
-window.addEventListener('scroll', menuScroll)
