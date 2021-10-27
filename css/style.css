@@ -676,7 +676,6 @@ VII. Service
 .about__statistics__content {
   width: 1170px;
   display: flex;
-  margin-top: 60px;
   justify-content: space-evenly;
 }
 .homepage__statistics__number {
@@ -706,7 +705,8 @@ VII. Service
   z-index: -1;
 }
 .about__number__counter {
-  padding-top: 100px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .about_title_counter {
   max-width: 471px;
