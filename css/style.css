@@ -409,102 +409,75 @@ VII. Service
 /*-------------------------------------- Service --------------------------------------*/
 
 /* SERVICE BANNER */
-.service__banner__img{
-  position: relative;
+
+.service__banner__container {
   display: flex;
   justify-content: center;
-  width:100%;
-  border-radius: 10px;
+  position: relative;
 }
-.service__banner__content{
-  /* background-color: aquamarine;
-  width: 1170px; */
-  /* height: px; */
+
+.service__banner__img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-.service__text__top{
- 
-  position: absolute; 
-  /* width: 203px;
-  height: 74px; */
-  padding-left: 859px;
-  top: 207px;
-  font-style: normal;
+
+.service__banner__content {
+  width: 1170px;
+  text-align: center;
+  padding: 207px 0 118px 0;
+}
+
+.service__text__top {
   font-weight: bold;
   font-size: 64px;
   line-height: 74px;
-  text-align: center;
   letter-spacing: -0.01em;
-  color: #0B0D27;
+  margin-bottom: 97px;
 }
-.service__text__title{
-  position: absolute;
+.service__text__title {
   width: 684px;
-  height: 128px;
-  left: 618px;
-  top: 378px;
-  font-family: Barlow;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  text-align: center;
-  color: #0B0D27;
+  margin: 0 auto;
 }
 /* SERVICE TYPES*/
 .service__types__container {
-  /* background-color: aquamarine; */
   display: flex;
   justify-content: center;
 }
 .service__Types__content {
-  /* background-color: burlywood; */
   width: 1170px;
 }
-.service__Types{
+.service__Types {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
-
-}
-#image_service{
-  position: absolute;
 }
 
-.service__Types__text{
-  display: block;
+.service__Types__text {
+  padding: 48px 0;
+  width: 452px;
 }
-.service__Types__top{
-  /* position: static; */
-  width: 470px; 
-  font-style: normal;
+
+.service__Types__top {
   font-weight: bold;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: -0.01em;
-  color: #0B0D27;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 24px 0px;
+  margin-bottom: 24px;
 }
-.service__Types__title{
-  /* position: static; */
-  width: 452px;
-  height: 108px;
-  font-style: normal;
-  font-weight: normal;
+.service__Types__title {
   font-size: 18px;
   line-height: 28px;
-  color: #0B0D27;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 24px 0px;
 }
 
 /* CONTACT */
 .service__contact__container {
-  background: #F8F8F8;
+  background: #f8f8f8;
   display: flex;
   justify-content: center;
 }
@@ -515,24 +488,23 @@ VII. Service
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.service__contact__top{
- 
+.service__contact__top {
   position: static;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.01em;
-  color: #0B0D27;
+  color: #0b0d27;
   text-transform: uppercase;
   letter-spacing: -0.01em;
-  color: #0B0D27;
+  color: #0b0d27;
   flex: none;
   order: 0;
   flex-grow: 0;
   margin-bottom: 16px;
 }
-.service__contact__mid{
+.service__contact__mid {
   position: static;
   /* width: 603px; */
   text-align: center;
@@ -541,13 +513,13 @@ VII. Service
   font-size: 64px;
   line-height: 74px;
   letter-spacing: -0.01em;
-  color: #0B0D27;
+  color: #0b0d27;
   flex: none;
   order: 1;
   flex-grow: 0;
   margin-bottom: 30px;
 }
-.service__contact__title{
+.service__contact__title {
   position: static;
   font-style: normal;
   font-weight: normal;
@@ -560,32 +532,31 @@ VII. Service
   flex-grow: 0;
   margin-bottom: 64px;
 }
-.service__contact__form1{
+.service__contact__form1 {
   display: flex;
-
 }
-.service__contact__form2{
+.service__contact__form2 {
   width: 591px;
   outline: none;
   margin-bottom: 35px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
 }
-.service__contact__form3{
+.service__contact__form3 {
   display: flex;
   width: 591px;
   outline: none;
   margin-bottom: 50px;
-  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid #c4c4c4;
 }
 
-.service__contact__input1{
+.service__contact__input1 {
   display: flex;
   width: 280px;
   outline: none;
   margin-bottom: 35px;
-  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid #c4c4c4;
 }
-.service__contact__input2{
+.service__contact__input2 {
   display: flex;
   width: 280px;
   outline: none;
@@ -593,52 +564,51 @@ VII. Service
   margin-left: 30px;
   border-bottom: 1px solid #c4c4c4;
 }
-.service__contact__input{
+.service__contact__input {
   /* width: 591px; */
-  background: #F8F8F8;
+  background: #f8f8f8;
   outline: none;
   border: none;
   font-family: "Barlow";
   font-size: 18px;
   margin-bottom: 12px;
-  width:280px;
+  width: 280px;
 }
-.service__btn__warning{
+.service__btn__warning {
   width: 169px;
   height: 60px;
-  background: #F8D000;
-  border:5px;
+  background: #f8d000;
+  border: 5px;
   margin-left: 231px;
 }
-.service__btn__text{
+.service__btn__text {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 28px; 
-  color: #0B0D27;
+  line-height: 28px;
+  color: #0b0d27;
   padding: 16px 30px;
   text-transform: uppercase;
 }
-.service__contact__icon{
+.service__contact__icon {
   margin-right: 12px;
   margin-bottom: 16px;
   border: 0.4px solid #ffffff;
 }
-.service__contact__select{
+.service__contact__select {
   display: flex;
-  width:591px;
+  width: 591px;
   margin-bottom: 34px;
-  border-bottom: 1px solid #C4C4C4;
-
+  border-bottom: 1px solid #c4c4c4;
 }
-.service__contact__select img{
+.service__contact__select img {
   margin-right: 9px;
   margin-bottom: 16px;
   border: 0.4px solid #ffffff;
 }
 
-#service__select__box{
-   -webkit-appearance: none;
+#service__select__box {
+  -webkit-appearance: none;
   background: transparent;
   background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   background-repeat: no-repeat;
@@ -662,5 +632,3 @@ VII. Service
   background-color: burlywood;
   width: 1170px;
 }
-
-
