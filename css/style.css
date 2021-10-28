@@ -409,18 +409,23 @@ VII. Service
 /*-------------------------------------- Service --------------------------------------*/
 
 /* SERVICE BANNER */
-.service__banner__container{
-  /* display: flex; */
-  /* justify-content: center; */
+.service__banner__img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width:100%;
+  border-radius: 10px;
 }
 .service__banner__content{
-  width: 684px;
+  /* background-color: aquamarine;
+  width: 1170px; */
   /* height: px; */
 }
 .service__text__top{
-  /* position: absolute; */
+ 
+  position: absolute; 
   /* width: 203px;
-  height: 74px;
+  height: 74px; */
   padding-left: 859px;
   top: 207px;
   font-style: normal;
@@ -429,7 +434,21 @@ VII. Service
   line-height: 74px;
   text-align: center;
   letter-spacing: -0.01em;
-  color: #0B0D27; */
+  color: #0B0D27;
+}
+.service__text__title{
+  position: absolute;
+  width: 684px;
+  height: 128px;
+  left: 618px;
+  top: 378px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #0B0D27;
 }
 /* SERVICE TYPES*/
 .service__types__container {
@@ -447,14 +466,15 @@ VII. Service
   margin-bottom: 100px;
 
 }
+#image_service{
+  position: absolute;
+}
 
 .service__Types__text{
   display: block;
-
 }
 .service__Types__top{
-    
-  position: static;
+  /* position: static; */
   width: 470px; 
   font-style: normal;
   font-weight: bold;
@@ -468,7 +488,7 @@ VII. Service
   margin: 24px 0px;
 }
 .service__Types__title{
-  position: static;
+  /* position: static; */
   width: 452px;
   height: 108px;
   font-style: normal;
@@ -644,8 +664,3 @@ VII. Service
 }
 
 
-#image{
-  position: absolute;
-  width:100%;
-  border-radius: 10px;
-}
