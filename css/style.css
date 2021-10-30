@@ -732,7 +732,7 @@ body {
 .homepage__project_slider {
   position: relative;
 }
-.owl-carousel {
+/* .owl-carousel {
   position: relative;
 }
 .owl-carousel .owl-item {
@@ -745,8 +745,8 @@ body {
   position: absolute;
   top: 50%;
   width: 100%;
-}
-.owl-carousel .owl-nav .owl-prev,
+} */
+/* .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -804,7 +804,7 @@ body {
 .owl-carousel.owl-drag .owl-item {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
-}
+} */
 .homepage__slider__content {
   width: 100%;
   background: #c42c2c url(../images/Bao.png) no-repeat left center;

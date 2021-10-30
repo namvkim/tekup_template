@@ -43,3 +43,33 @@
 })(jQuery);
 
 
+$(function() {
+
+	if ( $('.owl-2').length > 0 ) {
+        $('.owl-2').owlCarousel({
+            autoplay: true,
+            autoplayhoverpause: true,
+            autoplaytimeout: 100,
+            items: 3,
+            nav: true,
+            loop: true,
+            margin: 5,
+            padding: 5,
+            stagePadding: 5,
+            responsive:{
+                600:{
+                    margin: 20,
+                    nav: true,
+                  items: 2
+                },
+                1000:{
+                    margin: 20,
+                    stagePadding: 0,
+                    nav: true,
+                  items: 3
+                }
+            }
+        });            
+    }
+
+})
