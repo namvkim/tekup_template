@@ -1294,11 +1294,13 @@ body {
 }
 
 .service__banner__img {
-  position: absolute;
+  height: 691px;
   width: 100%;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+  opacity: 0.2;
 }
 
 .service__banner__content {
