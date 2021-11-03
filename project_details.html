@@ -24,6 +24,9 @@
      <!-- Style -->
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/product_detail.css">
+     <!--PhotoSwipe-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
      <title>Product Detail</title>
   <body>
     <section class="menu__container" id="menu__container">
@@ -71,90 +74,81 @@
           <div class="menu__overlay"></div>
       </div>
     </section>
-    <section class="product__detail">
-      <div class="product__detail__content">
-        <div class="product__detail__image">
-          <div class="product__detail__image_001 image" data-bs-toggle="modal" data-bs-target="#projectImage">
-            <img src="images/project_1.png"/>
+     
+    <section class="detailpage__section">
+      <div class="container">
+        <div class="row project__image">
+          <div class="col-sm-6">
+            <div class="row my-gallery">
+              <div class="col-lg-7 project__image__1">
+                <figure class="figure">
+                  <a href="images/project_1.png" itemprop="contentUrl" data-size="1024x1024">
+                    <img src="images/project_1.png" itemprop="thumbnail" alt="Image project 1"
+                    class="figure-img img-fluid rounded"  />
+                  </a>
+                  <figcaption itemprop="caption description">Project Image 1</figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-5 project__image__2">
+                <figure class="w-100 shadow-1-strong rounded">
+                  <a href="images/project_2.png" itemprop="contentUrl" data-size="1024x1024">
+                    <img
+                      src="images/project_2.png"
+                     
+                      alt="Lightbox image 1"
+                      class="w-100 mb-2 mb-md-3 shadow-1-strong rounded"
+                    />
+                  </a>
+                  <figcaption itemprop="caption description">Project Image 2</figcaption>
+                </figure>
+                <figure class="figure">
+                  <a href="images/project_3.png" itemprop="contentUrl" data-size="1024x1024">
+                    <img
+                      src="images/project_3.png"
+                      alt="Lightbox image 2"
+                      class="figure-img img-fluid rounded"
+                    />
+                  </a>
+                  <figcaption itemprop="caption description">Project Image 3</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
-          <div class="product__detail__image_002">
-            <div class="img-2 image" data-bs-toggle="modal" data-bs-target="#projectImage">
-              <img src="images/project_2.png"/> 
-            </div>
-            <div class="img-3 image" data-bs-toggle="modal" data-bs-target="#projectImage">
-              <img src="images/project_3.png"/> 
-            </div>
-          </div>
-        </div>
-        <div class="product__detail__text">
-          <div class="text">
-            <h2>Boxgo Fulfilment</h2>
-            <h5>UI/UX Design</h5>
-            <div class="text_info">
-              <ul class="project_info">
-                <h6>Thông tin dự án</h6>
-                <li>
-                  Created by TekUp, Boxgo is a specialized system for project
-                  management and operations management for construction
-                  companies.
-                </li>
-              </ul>
-              <ul class="implementing_time">
-                <h6>Thời gian thực hiện</h6>
-                <li>06 tháng</li>
-              </ul>
-              <ul class="technical">
-                <h6>Công nghệ</h6>
-                <li>.Node js .React .Flutter .Laverel</li>
-              </ul>
-            </div>
-            <div class="product_detail_link">
-              <a href="#">Truy cập trang web</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> 
-    <section>
-      <!-- Modal -->
-      <div class="modal fade" id="projectImage" tabindex="-1" aria-labelledby="projectImageLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="projectImageLabel">Project Image</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="images/project_1.png" class="d-block w-50 center" alt="...">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="images/project_2.png" class="d-block w-50" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/project_3.png" class="d-block w-50" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+          <div class="col-sm-6 project__content">
+            <div class="text__title">
+              <h2>Boxgo Fulfilment</h2>
+              <h5>UI/UX Design</h5>
+              <div class="text__inform">
+                <ul class="text">
+                  <h6>Thông tin dự án</h6>
+                  <li>
+                    Created by TekUp, Boxgo is a specialized system for project
+                    management and operations management for construction
+                    companies.
+                  </li>
+                </ul>
+                <ul class="text">
+                  <h6>Thời gian thực hiện</h6>
+                  <li>06 tháng</li>
+                </ul>
+                <ul class="text">
+                  <h6>Công nghệ</h6>
+                  <li>.Node js .React .Flutter .Laverel</li>
+                </ul>
+              </div>
+              <div class="project_detail_link">
+                <a href="#">Truy cập trang web</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
     <section class="other__project_section">
       <div class="container mt-5 other__project_content">
         <h2>Dự án khác</h2>
-        <div class="owl-carousel other_project_carousel">
+        <div class="owl-carousel my-gallery other_project_carousel">
           <div class="ms-2 me-2">
             <div class="item">
               <img data-src="images/project_item1.png" class="owl-lazy" >
@@ -268,9 +262,9 @@
       <!-- End Hoa write -->
       </div>
     </section>
-</body>
     
-
+          
+</body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -285,5 +279,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/detail.js"></script>
     <script src="./js/script.js"></script> 
+    <!-- PhotoSwipe JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
   </body>
 </html>
