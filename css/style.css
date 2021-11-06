@@ -23,7 +23,7 @@ VII. Service
 * {
   padding: 0;
   margin: 0;
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 body {
@@ -371,7 +371,7 @@ body {
 }
 .homepage__banner__logo__slider::after {
   background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 96.83%);
-  content: "";
+  content: '';
   height: 50px;
   width: 500px;
 
@@ -509,7 +509,7 @@ body {
   border-radius: 5px;
 }
 .homepage__services__containerTab button.active .homepage__services__boxImage {
-  background-image: url("../images/fingerPrint.svg");
+  background-image: url('../images/fingerPrint.svg');
   background-repeat: no-repeat;
 }
 
@@ -566,7 +566,7 @@ body {
 .homepage__services__boxImage {
   height: 95px;
   width: 95px;
-  background-image: url("../images/fingerPrint1.svg");
+  background-image: url('../images/fingerPrint1.svg');
   background-repeat: no-repeat;
 }
 .homepage__services__custom-btn:hover {
@@ -974,7 +974,7 @@ body {
   width: 100%;
   outline: none;
   border: none;
-  font-family: "Barlow";
+  font-family: 'Barlow';
   font-size: 18px;
   margin-bottom: 12px;
 }
@@ -1225,7 +1225,7 @@ body {
       rgba(11, 13, 39, 0.8)
     ),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/aboutbg.png");
+    url('../images/aboutbg.png');
 }
 
 .about__value__content {
@@ -1448,7 +1448,7 @@ body {
   background: #f8f8f8;
   outline: none;
   border: none;
-  font-family: "Barlow";
+  font-family: 'Barlow';
   font-size: 18px;
   margin-bottom: 12px;
   width: 280px;
