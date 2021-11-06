@@ -1,4 +1,37 @@
 if (document.getElementById('homepage')) {
+  // auto type letter in banner 
+  let typeEffect = (arr) => {
+    // let i = 0;
+    // let count = 0;
+    // let arrSize = arr.length;
+    // setInterval(function () {
+    //   // for (i = 0; i < arr[count].length; i++) {
+
+    //   // }
+    //   if (i < arr[count].length) {
+    //     document.getElementById("homepage__banner__title").append(arr[count].charAt(i));
+    //     i++;
+    //   } else {
+    //     count++;
+    //     if (count === arrSize) count = 0;
+    //     i = 0;
+    //     // setTimeout(function () { alert("After 5 seconds!"); }, 5000);
+    //     document.getElementById("homepage__banner__title").innerHTML = "";
+    //   }
+    // }, 150);
+
+
+  };
+
+  const arr = [
+    "Dẫn đầu xu hướng, nắm bắt tương lai",
+    "Khởi dậy đam mê",
+    "Kết nối mọi người",
+    "Đà Nẵng – Thành phố không bao giờ ngủ",
+    "Hãy là tất cả những gì bạn muốn",
+  ];
+
+  typeEffect(arr);
 
   // carosel for logo in banner (nam)
   let items = document.querySelectorAll(

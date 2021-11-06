@@ -28,6 +28,7 @@ VII. Service
 
 body {
   color: #0b0d27;
+  background-color: #ffffff;
 }
 
 /*-------------------------------------- Layout --------------------------------------*/
@@ -102,7 +103,7 @@ body {
   height: 100vh;
   padding: 38px 48px;
   transform: translateX(100%);
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 
   position: fixed;
   right: 0px;
@@ -218,39 +219,25 @@ body {
 /*-------------------------------------- Homepage --------------------------------------*/
 
 /* 01. Banner */
-.homepage__banner__container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: white;
-  position: relative;
-}
 .homepage__banner__img {
-  width: 932px;
-  height: 1142px;
-  z-index: 10;
-
-  position: absolute;
-  top: 0;
-  right: 0;
+  height: 93.53%;
 }
-.homepage__banner__content {
+
+.homepage__banner__main {
   width: 1720px;
-  height: 1221px;
-  padding-top: 231px;
+  margin-top: 120px;
 }
 
-.homepage__banner__carousel {
+.homepage__carousel__content {
   width: 847px;
+  height: 470px;
 }
-.homepage__banner__title {
+
+#homepage__banner__title {
   font-size: 110px;
   line-height: 110px;
   font-weight: bold;
   letter-spacing: -0.01em;
-  margin: 40px 0;
 }
 .homepage__banner__subtitle {
   font-weight: 500;
@@ -260,107 +247,72 @@ body {
   letter-spacing: -0.01em;
 }
 .homepage__banner__button {
+  font-weight: 700;
+  font-size: 24px;
   width: 274px;
   height: 60px;
   border-radius: 5px;
-  margin-top: 90px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f8d000;
-
+  padding: 0px 30px;
+  margin: 90px 0 148px 0;
   cursor: pointer;
+  background-color: #f8d000;
 }
-.homepage__banner__button__title {
-  font-weight: 700;
-  font-size: 24px;
+
+.homepage__banner__button:hover {
+  background-color: #ffe24b;
 }
-.homepage__banner__button__icon {
-  margin-left: 10px;
-}
-.homepage__banner__logo {
-  margin-top: 148px;
-  display: flex;
-  align-items: center;
-}
+
 .homepage__banner__logo__left {
   width: 105px;
 }
-.homepage__banner__logo__left .homepage__banner__logo__number {
+.homepage__banner__logo__number {
   font-size: 64px;
   font-weight: 700;
   line-height: 77px;
 }
-.homepage__banner__logo__left .homepage__banner__logo__title {
+.homepage__banner__logo__title {
   font-size: 14px;
-  font-weight: bold;
   line-height: 17px;
-  text-align: right;
   letter-spacing: -0.01em;
 }
 
-/* carosel logo */
-.homepage__banner__logo__right {
-  width: 650px;
-  margin-left: 45px;
-  position: relative;
+.homepage__banner__logo__center {
+  width: 1px;
+  height: 60px;
+  margin: 0 40px;
+  background-color: #d2d2d2;
 }
-
-.homepage__banner__cover {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 50px;
-  width: 460px;
-  background: linear-gradient(
-    270deg,
-    #ffffff 0%,
-    rgba(255, 255, 255, 0) 96.83%
-  );
-}
-
-/* .homepage__banner__logo .carousel-inner .carousel-item > div {
-  height: 50px;
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 767px) {
-  .homepage__banner__logo .carousel-inner .carousel-item > div {
-    display: none;
-  }
-  .homepage__banner__logo .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
-
-.homepage__banner__logo .carousel-inner .carousel-item.active,
-.homepage__banner__logo .carousel-inner .carousel-item-next,
-.homepage__banner__logo .carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-@media (min-width: 768px) {
-  .homepage__banner__logo .carousel-inner .carousel-item-end.active,
-  .homepage__banner__logo .carousel-inner .carousel-item-next {
-    transform: translateX(20%);
-  }
-
-  .homepage__banner__logo .carousel-inner .carousel-item-start.active,
-  .homepage__banner__logo .carousel-inner .carousel-item-prev {
-    transform: translateX(-20%);
-  }
-}
-
-.homepage__banner__logo .carousel-inner .carousel-item-end,
-.homepage__banner__logo .carousel-inner .carousel-item-start {
-  transform: translateX(0);
-} */
 
 /* carosel trượt ngang */
+.homepage__banner__logo__right {
+  height: 50px;
+  width: 650px;
+  overflow: hidden;
+}
+.homepage__banner__logo__right::after {
+  background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 96.83%);
+  content: "";
+  height: 50px;
+  width: 500px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.homepage__banner__logo__right > div {
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(130px * 10);
+}
+
+.homepage__banner__logo__right > div > div {
+  height: 50px;
+  width: 130px;
+}
+
 @-webkit-keyframes scroll {
   0% {
     transform: translateX(0);
@@ -378,38 +330,45 @@ body {
     transform: translateX(calc(-130px * 5));
   }
 }
-.homepage__banner__logo__slider {
-  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
-  height: 50px;
-  margin-left: 45px;
-  overflow: hidden;
-  position: relative;
-  width: 650px;
-}
-.homepage__banner__logo__slider::after {
-  background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 96.83%);
-  content: "";
-  height: 50px;
-  width: 500px;
 
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 10;
-}
-
-.homepage__banner__logo__slider > div {
-  -webkit-animation: scroll 20s linear infinite;
-  animation: scroll 20s linear infinite;
-  display: flex;
-  width: calc(130px * 10);
-}
-.homepage__banner__logo__slider > div > div {
-  height: 50px;
-  width: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media only screen and (max-width: 576px) {
+  .homepage__banner__img {
+    height: 271px;
+    opacity: 0.2;
+    margin-top: 80px;
+  }
+  .homepage__banner__main {
+    width: 100%;
+    margin-top: 127px;
+  }
+  .homepage__carousel__content {
+    width: 100%;
+    height: 248px;
+  }
+  #homepage__banner__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .homepage__banner__subtitle {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 16px;
+  }
+  .homepage__banner__button {
+    width: 232px;
+    font-size: 18px;
+    margin: 32px 0 40px 0;
+  }
+  .homepage__banner__logo__number {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .homepage__banner__logo__center {
+    margin: 0 24px;
+  }
+  .homepage__banner__logo__right::after {
+    display: none;
+  }
 }
 
 /* 02. About Us */
@@ -1095,7 +1054,6 @@ body {
 }
 
 .homepage__reviews__p-4 {
-  background-color: white;
   border-radius: 5px 5px 5px 0px;
   -webkit-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
   box-shadow: 5px 10px 18px rgb(0 0 0 / 8%);
@@ -1327,7 +1285,6 @@ body {
     padding-left: 0.5%;
   }
 }
-
 
 /*-------------------------------------- Contact --------------------------------------*/
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p"></p>
+  </body>
+  <style>
+    p {
+      text-align: left;
+      margin: 0;
+      font-size: 20pt;
+      font-weight: 900;
+      width: 50%;
+    }
+  </style>
+  <script>
+    let typeEffect = (arr) => {
+      let i = 0;
+      let count = 0;
+      let timer = setInterval(function () {
+        if (i < arr[count].length) {
+          document.getElementById("").append(arr[count].charAt(i));
+          i++;
+        } else {
+          count++;
+          if (count === 5) count = 0;
+          i = 0;
+          document.getElementById("p").innerHTML = "";
+        }
+      }, 21);
+    };
+
+    const arr = [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante arcu, dignissim non risus id, posuere efficitur felis. Vestibulum arcu",
+      "onsectetur adipiscing elit. Donec ante arcu, dignissim non risus id, posuere ef",
+      "dolor sit amet, consectetur adipiscing elit. Donec ante arcu",
+      "ipsum dolor sit amet, consectetur adipiscing elit. Donec ante arcu",
+      "it. Donec ante arcu, d ipsum dolor sit amet, consectetur adipiscing elit. Donec ante arcu!",
+    ];
+
+    typeEffect(arr);
+  </script>
+</html>
