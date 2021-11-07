@@ -376,7 +376,7 @@ body {
   background-color: #0b0d27;
 }
 
-.homepage__about__stroke1 {
+.homepage__about__stroke__1a {
   transform: rotate(180deg);
 }
 
@@ -385,14 +385,21 @@ body {
   margin: 140px 0;
 }
 
-.homepage__about__stroke3 {
+.homepage__about__stroke__2 {
   top: 48px;
   left: -94px;
+}
+.homepage__about__stroke__3,
+.homepage__about__stroke__4,
+.homepage__about__stroke__5 {
+  display: none;
 }
 
 .homepage__about__image img {
   width: 487px;
   border-radius: 10px;
+  position: relative;
+  z-index: 10;
 }
 .homepage__about__text {
   width: 630px;
@@ -438,9 +445,9 @@ body {
     margin: 40px 0;
     flex-direction: column;
   }
-  .homepage__about__stroke1,
-  .homepage__about__stroke2,
-  .homepage__about__stroke3 {
+  .homepage__about__stroke__1a,
+  .homepage__about__stroke__1b,
+  .homepage__about__stroke__2 {
     display: none;
   }
   .homepage__about__image img {
@@ -470,6 +477,14 @@ body {
   }
   .homepage__about__text5 {
     display: none;
+  }
+  .homepage__about__stroke__3,
+  .homepage__about__stroke__4,
+  .homepage__about__stroke__5 {
+    display: block;
+  }
+  .homepage__about__stroke__5 {
+    top: 40px;
   }
 }
 /* 03. Our Services */
@@ -1240,15 +1255,15 @@ body {
 
 /* 07. Contact Us */
 .homepage__contact__container {
-  display: flex;
-  justify-content: center;
   padding: 120px 0px;
-  background-image: url(../images/development.svg);
-  background-color: #0b0d27;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  background: linear-gradient(
+      0deg,
+      rgba(11, 13, 39, 0.8),
+      rgba(11, 13, 39, 0.8)
+    ),
+    url(https://lavenderstudio.com.vn/wp-content/uploads/2017/03/chup-san-pham.jpg);
+  mix-blend-mode: screen;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .homepage__contact__content {
