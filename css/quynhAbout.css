@@ -22,7 +22,7 @@
 
 .aboutPage__fighHandTeam {
   display: flex;
-  margin-left: -43px;
+  margin-left: -46px;
 }
 
 .aboutPage__fighHandTeamImage {
@@ -203,9 +203,10 @@
   margin-bottom: 0;
   font-family: Barlow;
   font-style: normal;
-  font-weight: 600px;
+  font-weight: 600 !important;
   font-size: 18px;
   line-height: 28px;
+  color: #000000;
 }
 
 .aboutPage__name_position {
@@ -217,6 +218,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+  color: #828282;
 }
 @media only screen and (min-width: 280px) and (max-width: 320px) {
   .aboutPage__name_position {
