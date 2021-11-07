@@ -1,6 +1,6 @@
 // carosel for logo in banner (nam)
 let items = document.querySelectorAll(
-  ".hompage__banner__logo .carousel .carousel-item"
+  '.hompage__banner__logo .carousel .carousel-item'
 );
 
 items.forEach((el) => {
@@ -23,23 +23,26 @@ showSlides();
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("homepage__reviews__mySlides");
-  var dots = document.getElementsByClassName("homepage__reviews__dot");
+  var slides = document.getElementsByClassName('homepage__reviews__mySlides');
+  var dots = document.getElementsByClassName('homepage__reviews__dot');
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = 'none';
   }
   slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("activeperfect", "");
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " activeperfect";
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace('activeperfect', '');
+  }
+  slides[slideIndex - 1].style.display = 'block';
+  dots[slideIndex - 1].className += ' activeperfect';
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 //end Hoa write
 
-// services
+// services quynh
+alert(' nhu quynh');
 $(document).ready(function () {
   $('.counter').each(function () {
     $(this)
@@ -81,13 +84,13 @@ document.getElementById('defaultOpen').click();
 
 function menuScroll() {
   if (window.scrollY > 0) {
-    document.getElementById('menu__container').style.backgroundColor = "white";
-    document.getElementById('menu__container').style.boxShadow = "0 0 9px rgb(0 0 0 / 15%)";
+    document.getElementById('menu__container').style.backgroundColor = 'white';
+    document.getElementById('menu__container').style.boxShadow =
+      '0 0 9px rgb(0 0 0 / 15%)';
   } else {
-    document.getElementById('menu__container').style.backgroundColor = "";
-    document.getElementById('menu__container').style.boxShadow = "";
-
+    document.getElementById('menu__container').style.backgroundColor = '';
+    document.getElementById('menu__container').style.boxShadow = '';
   }
 }
 
-window.addEventListener('scroll', menuScroll)
+window.addEventListener('scroll', menuScroll);
