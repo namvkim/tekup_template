@@ -178,12 +178,6 @@
   .aboutPage_cursorImages {
     width: 10%;
   }
-  .aboutPage__title_position {
-    line-height: 26px;
-  }
-  .aboutPage__name_position {
-    line-height: 20px;
-  }
 }
 
 .aboutPage_containCursorImages {
@@ -204,6 +198,7 @@
 }
 
 .aboutPage__title_position {
+  width: 210px;
   margin-top: 0px;
   margin-bottom: 0;
   font-family: Barlow;
@@ -214,6 +209,7 @@
 }
 
 .aboutPage__name_position {
+  width: 178px;
   margin-top: 0;
   margin-bottom: 0;
   font-family: Barlow;
@@ -222,10 +218,65 @@
   font-size: 18px;
   line-height: 30px;
 }
-
+@media only screen and (min-width: 280px) and (max-width: 320px) {
+  .aboutPage__name_position {
+    width: 110px;
+    line-height: 28px;
+  }
+  .aboutPage__title_position {
+    width: 145px;
+  }
+  .aboutPage_cursorImages {
+    max-width: 200px;
+    margin: 0px 15px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 475px) {
+  .aboutPage__name_position {
+    width: 110px;
+    line-height: 28px;
+  }
+  .aboutPage__title_position {
+    width: 145px;
+  }
+  /* .aboutPage_cursorImages {
+    max-width: 200px;
+    margin: 0px 25px;
+  } */
+}
+@media only screen and (min-width: 540px) and (max-width: 675px) {
+  .aboutPage__name_position {
+    width: 110px;
+    line-height: 28px;
+  }
+  .aboutPage__title_position {
+    width: 145px;
+  }
+  /* .aboutPage_cursorImages {
+    max-width: 200px;
+    margin: 0px 25px;
+  } */
+}
+@media only screen and (min-width: 360px) and (max-width: 375px) {
+  .aboutPage__name_position {
+    width: 130px;
+    line-height: 28px;
+  }
+  .aboutPage__title_position {
+    width: 150px;
+  }
+  .aboutPage_cursorImages {
+    max-width: 190px;
+    margin: 0px 20px;
+  }
+}
 @media only screen and (min-width: 375px) and (max-width: 390px) {
   .aboutPage__container__imagesThucDayIT {
     width: 350px !important;
+  }
+  .aboutPage_cursorImages {
+    max-width: 200px;
+    margin: 0px 25px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 750px) {
@@ -271,7 +322,10 @@
     align-items: center;
     margin: 0 auto !important ;
   }
-
+  .aboutPage_cursorImages {
+    max-width: 200px;
+    margin: 0px 25px;
+  }
   .homepage__statistics__number span {
     font-weight: bold !important;
     font-size: 38px !important;
@@ -289,6 +343,11 @@
     text-align: center;
     margin-bottom: 0 !important;
   }
+  /* .aboutPage_cursorImages {
+    width: 190px;
+    margin: 0px 40px;
+    background-color: blueviolet;
+  } */
 }
 
 @media only screen and (min-width: 275px) and (max-width: 329px) {
@@ -372,11 +431,19 @@
   .about__statistics__content {
     width: 510px !important;
   }
+  .aboutPage_cursorImages {
+    max-width: 200px;
+    margin: 0px 25px;
+  }
 }
 
 @media only screen and (min-width: 770px) and (max-width: 1024px) {
   .about__statistics__content {
     width: 750px !important;
+  }
+  .aboutPage_cursorImages {
+    max-width: 150px;
+    margin: 0px 25px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
