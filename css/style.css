@@ -488,170 +488,76 @@ body {
   }
 }
 /* 03. Our Services */
-
-.homepage__services__containerTab {
-  float: left;
-  /* border: 1px solid #ccc; */
-  background-color: inherit;
-  width: 30%;
-  height: 300px;
-}
-
-/* Style the buttons inside the tab */
-.homepage__services__containerTab button {
-  display: block;
-  color: black;
-  background-color: #fffdfa;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 0;
-  margin-bottom: 40px;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-  box-shadow: #fffdfa;
-}
-
-.homepage__services__containerTab button.active {
-  background: #ffffff;
-  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.homepage__services__containerTab button.active .homepage__services__boxImage {
-  background-image: url("../images/fingerPrint.svg");
-  background-repeat: no-repeat;
-}
-
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  width: 70%;
-  border-left: none;
-  height: 300px;
-}
-
-.homepage__services__container {
-  display: flex;
-  justify-content: center;
-}
 .homepage__services__content {
   width: 1170px;
-  margin-top: 140px;
+  margin: 140px 0;
 }
 .homepage__services__title {
-  max-width: 57px;
-  font-family: Barlow;
-  font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-}
-.homepage__services__underTitle {
-  max-width: 609px;
-  font-family: Barlow;
-  font-style: normal;
+  margin-bottom: 20px;
   font-weight: bold;
+  max-width: 631px;
+}
+
+.homepage__services__underTitle {
   font-size: 64px;
   line-height: 74px;
-  margin-top: 20px;
   margin-bottom: 30px;
   letter-spacing: -0.01em;
-}
-.homepage__services__contentOfTitle {
+  font-weight: bold;
   max-width: 631px;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: normal;
+}
+
+.homepage__services__contentOfTitle {
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 56px;
+  width: 631px;
+}
+
+.homepage__service__stroke__6 {
+  top: -123px;
+  right: -113px;
+}
+
+.homepage__services__containerTab {
+  height: 365px;
+  width: 370px;
+}
+
+.homepage__services__containerTab div.active {
+  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
+}
+.homepage__services__containerTab div.active .homepage__services__boxImage {
+  background-image: url("../images/fingerPrint.svg");
+  background-repeat: no-repeat;
 }
 
 .homepage__services__box {
   width: 370px;
   height: 95px;
-  display: flex;
-  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
 }
+
+.homepage__services__box:hover {
+  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
+}
+
 .homepage__services__boxImage {
   height: 95px;
   width: 95px;
   background-image: url("../images/fingerPrint1.svg");
-  background-repeat: no-repeat;
-}
-.homepage__services__custom-btn:hover {
-  background-color: #ffe24b;
-}
-.homepage__services__containerBox:hover {
-  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
-}
-.homepage__services__containerBox {
-  padding: 0;
-  display: flex;
-  /* background-color: aquamarine; */
 }
 
 .homepage__services__boxText {
-  width: 210px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  margin-left: 23px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-}
-
-.homepage__services__tabs {
-  margin-left: 420px;
-  position: relative;
-  font-family: Barlow;
-  max-width: 695px;
-}
-.homepage__services__text__block {
-  position: absolute;
-  width: 695px;
-  bottom: 50px;
-  margin-left: 38px;
-  color: white;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.homepage__services__custom-btn {
-  position: absolute;
-  width: 205px;
-  height: 44px;
-  background: #f8d000;
-  border-radius: 5px;
-  border: 0px solid #000;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  right: -31px;
-  bottom: -22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.homepage__services__custom-btn img {
-  margin-left: 12px;
-}
-.homepage__services__textBtn-1 {
-  text-decoration: none;
-  width: 119px;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 28px;
-  color: #0b0d27;
+  font-weight: 600;
+  width: 210px;
+  height: 64px;
+  margin-left: 23px;
 }
 
 .homepage__services__imageContentTab {
@@ -659,6 +565,71 @@ body {
   height: 405px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.homepage__services__text__block {
+  width: 695px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #ffffff;
+  bottom: 50px;
+  margin: 0 38px;
+}
+
+.homepage__services__custom-btn {
+  width: 205px;
+  height: 44px;
+  background: #f8d000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  right: 44px;
+  bottom: -22px;
+}
+
+.homepage__services__custom-btn:hover {
+  background-color: #ffe24b;
+}
+
+.homepage__services__textBtn-1 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #0b0d27;
+  text-decoration: none;
+}
+
+.homepage__services__textBtn-1:hover {
+  color: #0b0d27;
+}
+
+@media only screen and (max-width: 576px) {
+  .homepage__services__content {
+    width: 100%;
+    margin: 38px 0;
+  }
+
+  .homepage__services__underTitle {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+
+  .homepage__services__contentOfTitle {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 29px;
+  }
+
+  .homepage__service__stroke__6 {
+    display: none;
+  }
+  .homepage__services__imageContentTab {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
 
 /* 04. Statistics */
@@ -1255,68 +1226,68 @@ body {
 
 /* 07. Contact Us */
 .homepage__contact__container {
-  padding: 120px 0px;
   background: linear-gradient(
       0deg,
       rgba(11, 13, 39, 0.8),
       rgba(11, 13, 39, 0.8)
     ),
-    url(https://lavenderstudio.com.vn/wp-content/uploads/2017/03/chup-san-pham.jpg);
-  mix-blend-mode: screen;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+    url("https://s3-alpha-sig.figma.com/img/e667/7a47/564ee16aa2d58136329beda5e88e2335?Expires=1636934400&Signature=HSkg1dCNe5asCRuRsOiVaVMeqV~rbTTp3RGxBhZiEtaglaQeTrwlDmRZGkSJvVa58lmAk-Kq6p~LnoHZmC8svjjbbGF-bOjSF~pJAiX6iPHq07i-X09cQUwXl18NihA4pAhF5O3BL4gtsbKefTyU4q7jpu7-NSlIyDmrZJj5evmRI7Vl3n2nRp0LU7qIB-XiHw70tAlKGtM5beTd6HeYd3szEwyRyjD1D6MCupdWyLcUQae8bGFwCsf343Bf1xvQqoJkdnkNT2WoAxNtMzuwnHu2YPeFZH4rPJ1a05~z6o2qeOgGthgONyLHqeKf64bXiNcShtHOwQAn4ogPyNWicg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-size: cover;
+  background-position: center;
 }
 
 .homepage__contact__content {
-  width: 1170px;
+  width: 893px;
+  margin: 120px 0px;
 }
 
-.home__contact__title h2 {
-  color: #fff;
-  letter-spacing: -0.01em;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: bold;
+.homepage__contact__title {
   font-size: 64px;
   line-height: 74px;
-}
-
-.home__contact__button a {
-  display: inline-block;
-  width: 403.83px;
-  font-size: 24px;
-  font-family: Barlow;
-  font-style: normal;
+  letter-spacing: -0.01em;
   font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.home__contact__button {
+  font-size: 24px;
   line-height: 28px;
-  padding: 16px 30px;
-  background: #f8d000;
-  color: #0b0d27;
-  text-align: left;
-  text-transform: uppercase;
-  transition: all 0.3s;
+  font-weight: 700;
+
   border-radius: 5px;
+  padding: 16px 30px;
+  margin-top: 60px;
+  background-color: #f8d000;
+  cursor: pointer;
+}
+.home__contact__button:hover {
+  background-color: #ffe24b;
+}
+.home__contact__button a {
   text-decoration: none;
+  color: #0b0d27;
 }
 
-.home__contact__button a img {
-  position: absolute;
-  padding-left: 0.5%;
+.home__contact__button a:hover {
+  color: #0b0d27;
 }
 
-@media only screen and (min-width: 1900px) {
-  .home__contact__title h2 {
-    font-size: 64px;
-    line-height: 74px;
+.home__contact__button img {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .homepage__contact__content {
+    width: 100%;
+    margin: 70px 0;
   }
-  .home__contact__button a {
-    font-size: 24px;
-    line-height: 28px;
-    width: 403.83px;
-    padding: 16px 30px;
+  .homepage__contact__title {
+    font-size: 40px;
+    line-height: 48px;
   }
-  .home__contact__button a img {
-    position: absolute;
-    padding-left: 0.5%;
+  .home__contact__button {
+    font-size: 18px;
+    margin-top: 40px;
   }
 }
 
