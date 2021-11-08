@@ -1227,6 +1227,7 @@ body {
 .about__title__body__content {
   font-size: 18px;
   line-height: 28px;
+  font-weight: 400;
 }
 
 .about__value__container {
@@ -1340,6 +1341,7 @@ body {
   .about__title__body__content {
     font-size: 18px;
     line-height: 28px;
+    font-weight: 400;
   }
 
   .about__direction__content {
