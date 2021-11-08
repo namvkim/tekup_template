@@ -50,31 +50,31 @@ if (document.getElementById('homepage')) {
   });
 
   //carosel for perfect service
-  // var slideIndex = 0;
-  // showSlides();
+  var slideIndex = 0;
+  showSlides();
 
-  // function showSlides() {
-  //   var i;
-  //   var slides = document.getElementsByClassName("homepage__reviews__mySlides");
-  //   var dots = document.getElementsByClassName("homepage__reviews__dot");
-  //   for (i = 0; i < slides.length; i++) {
-  //     slides[i].style.display = "none";
-  //   }
-  //   slideIndex++;
-  //   if (slideIndex > slides.length) { slideIndex = 1 }
-  //   for (i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace("activeperfect", "");
-  //   }
-  //   slides[slideIndex - 1].style.display = "block";
-  //   dots[slideIndex - 1].className += " activeperfect";
-  //   setTimeout(showSlides, 2000);
-  // }
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("homepage__reviews__mySlides");
+    var dots = document.getElementsByClassName("homepage__reviews__dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("activeperfect", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " activeperfect";
+    setTimeout(showSlides, 2000);
+  }
 
   // services
   $(document).ready(function () {
-    $('.counter').each(function () {
+    $('.homepage__statistics__counter').each(function () {
       $(this)
-        .prop('Counter', 0)
+        .prop('homepage__statistics__counter', 0)
         .animate(
           {
             Counter: $(this).text(),

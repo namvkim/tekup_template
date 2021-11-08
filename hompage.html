@@ -25,7 +25,7 @@
     />
 
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
     <!-- font awesome -->
     <link
@@ -515,32 +515,37 @@
         </div>
       </div>
     </section>
-    <section class="homepage__statistics__container">
+    <section class="d-flex justify-content-center position-relative px-3">
+      <img
+        src="images/background_dot3d.gif"
+        alt=""
+        class="homepage__statistics__background position-absolute"
+      />
       <div class="homepage__statistics__content">
-        <div>
-          <div class="homepage__statistics__number">
-            <span class="counter">100</span>
+        <div class="homepage__statistics__box">
+          <div class="d-flex mb-2">
+            <div class="homepage__statistics__counter">150</div>
           </div>
           <div class="homepage__statistics__title">Impactful Products</div>
         </div>
-        <div>
-          <div class="homepage__statistics__number">
-            <span class="counter">450</span>
-            <i class="fa fa-plus" aria-hidden="true"></i>
+        <div class="homepage__statistics__box">
+          <div class="d-flex mb-2">
+            <div class="homepage__statistics__counter">400</div>
+            <div class="homepage__statistics__plus">+</div>
           </div>
           <div class="homepage__statistics__title">Successful Projects</div>
         </div>
-        <div>
-          <div class="homepage__statistics__number">
-            <span class="counter">50</span>
-            <i class="fa fa-plus" aria-hidden="true"></i>
+        <div class="homepage__statistics__box">
+          <div class="d-flex mb-2">
+            <div class="homepage__statistics__counter">50</div>
+            <div class="homepage__statistics__plus">+</div>
           </div>
           <div class="homepage__statistics__title">Happy Clients</div>
         </div>
-        <div>
-          <div class="homepage__statistics__number">
-            <span class="counter">80</span>
-            <i class="fa fa-plus" aria-hidden="true"></i>
+        <div class="homepage__statistics__box">
+          <div class="d-flex mb-2">
+            <div class="homepage__statistics__counter">80</div>
+            <div class="homepage__statistics__plus">+</div>
           </div>
           <div class="homepage__statistics__title">Company Awards</div>
         </div>
@@ -660,111 +665,167 @@
           </div>
         </div>
       </section> -->
-    <!-- <div class="hompage__project_space">
-      </div>  
-      <section class="homepage__reviews__container">
-        <div class="homepage__reviews__content">
-          <div class="homepage__reviews__images col-md-6 col-sm-6 col-xs-6">
-            <div class="homepage__reviews__eachimage">
-              <img src="/images/Ellipse 6.png" alt="" class="rounded-full">
+    <div class="hompage__project_space"></div>
+    <section
+      class="homepage__reviews__container d-flex justify-content-center px-3"
+    >
+      <div class="homepage__reviews__content row">
+        <div class="col-lg-6 position-relative">
+          <img
+            src="/images/customer_reviews_1.png"
+            alt=""
+            class="homepage__reviews__image__1"
+          />
+          <img
+            src="/images/customer_reviews_2.png"
+            alt=""
+            class="homepage__reviews__image__2"
+          />
+          <img
+            src="/images/customer_reviews_3.png"
+            alt=""
+            class="homepage__reviews__image__3"
+          />
+          <img
+            src="/images/customer_reviews_4.png"
+            alt=""
+            class="homepage__reviews__image__4"
+          />
+          <img
+            src="/images/customer_reviews_5.png"
+            alt=""
+            class="homepage__reviews__image__5"
+          />
+        </div>
+        <div class="col-lg-6 ps-3">
+          <div>
+            <div class="homepage__reviews__mySlides">
+              <div
+                class="
+                  homepage__reviews__personal
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+              >
+                <img src="/images/customer_reviews_6.png" alt="" />
+                <div class="ms-3">
+                  <div class="homepage__reviews__name">Rafael Vincent</div>
+                  <div class="homepage__reviews__position">
+                    Director of company X
+                  </div>
+                </div>
+              </div>
+              <div class="homepage__reviews__title mb-3">
+                ĐÁNH GIÁ CỦA KHÁCH HÀNG
+              </div>
+              <div class="homepage__reviews__title__main mb-3">
+                Dịch vụ hoàn hảo nhất mà tôi từng gặp
+              </div>
+              <div class="homepage__reviews__star d-flex mb-4">
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+              </div>
+              <div class="homepage__reviews__describe">
+                Do đó, Tekup sẵn sàng cung cấp thông tin chi tiết và bằng chứng
+                dựa trên dữ liệu để hiện thực hóa các giải pháp kỹ thuật số hiệu
+                quả cho doanh nghiệp của bạn.
+              </div>
             </div>
-            <div class="homepage__reviews__eachimage2">
-              <img src="/images/Ellipse 7.png" alt="" class="rounded-full2">
+            <div class="homepage__reviews__mySlides">
+              <div
+                class="
+                  homepage__reviews__personal
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+              >
+                <img src="/images/customer_reviews_6.png" alt="" />
+                <div class="ms-3">
+                  <div class="homepage__reviews__name">Rafael Vincent</div>
+                  <div class="homepage__reviews__position">
+                    Director of company X
+                  </div>
+                </div>
+              </div>
+              <div class="homepage__reviews__title mb-3">
+                ĐÁNH GIÁ CỦA KHÁCH HÀNG
+              </div>
+              <div class="homepage__reviews__title__main mb-3">
+                Dịch vụ hoàn hảo nhất mà tôi từng gặp
+              </div>
+              <div class="homepage__reviews__star d-flex mb-4">
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+              </div>
+              <div class="homepage__reviews__describe">
+                Do đó, Tekup sẵn sàng cung cấp thông tin chi tiết và bằng chứng
+                dựa trên dữ liệu để hiện thực hóa các giải pháp kỹ thuật số hiệu
+                quả cho doanh nghiệp của bạn.
+              </div>
             </div>
-            <div class="homepage__reviews__eachimage3">
-              <img src="/images/Ellipse 8.png" alt="" class="rounded-full3">
-            </div>
-            <div class="homepage__reviews__eachimage4">
-              <img src="/images/Ellipse 9.png" alt="" class="rounded-full4">
-            </div>
-            <div class="homepage__reviews__eachimage5">
-              <img src="/images/Ellipse 10.png" alt="" class="rounded-full5">
+            <div class="homepage__reviews__mySlides">
+              <div
+                class="
+                  homepage__reviews__personal
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+              >
+                <img src="/images/customer_reviews_6.png" alt="" />
+                <div class="ms-3">
+                  <div class="homepage__reviews__name">Rafael Vincent</div>
+                  <div class="homepage__reviews__position">
+                    Director of company X
+                  </div>
+                </div>
+              </div>
+              <div class="homepage__reviews__title mb-3">
+                ĐÁNH GIÁ CỦA KHÁCH HÀNG
+              </div>
+              <div class="homepage__reviews__title__main mb-3">
+                Dịch vụ hoàn hảo nhất mà tôi từng gặp
+              </div>
+              <div class="homepage__reviews__star d-flex mb-4">
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+                <img src="./images/icon_star.svg" alt="" />
+              </div>
+              <div class="homepage__reviews__describe">
+                Do đó, Tekup sẵn sàng cung cấp thông tin chi tiết và bằng chứng
+                dựa trên dữ liệu để hiện thực hóa các giải pháp kỹ thuật số hiệu
+                quả cho doanh nghiệp của bạn.
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <div class="perfectservices__slideshow-container">
-              <div class="homepage__reviews__mySlides">
-                <div class="homepage__reviews__p-4 " >
-                  <div class="homepage__reviews__flex ">
-                    <img src="/images/Ellipse 5.png" alt="" class="w-10 rounded-full">
-                    <div class="homepage__reviews__block">
-                      <div class="text-base"> Rafael Vincent </div>
-                      <div class="text-xs"> Director of company X </div>
-                    </div>
-                  </div>
-                </div>
-                <div style='padding-top:60px;'>
-                  <div class="homepage__reviews__text" >ĐÁNH GIÁ CỦA KHÁCH HÀNG</div>
-                  <div class="homepage__reviews__textmini">Dịch vụ hoàn hảo nhất mà tôi từng gặp</div>
-                </div>
-                <div class="homepage__reviews__remark" >
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                </div>
-                <div class="homepage__reviews__describe">Do đó, Tekup sẵn sàng cung cấp thông tin chi tiết và bằng chứng dựa trên dữ liệu để hiện thực hóa các giải pháp kỹ thuật số hiệu quả cho doanh nghiệp của bạn.
-                </div>
-              </div>
-              <div class="homepage__reviews__mySlides">
-                <div class="homepage__reviews__p-4 " >
-                  <div class="homepage__reviews__flex ">
-                    <img src="/images/Ellipse 5.png" alt="" class="w-10 rounded-full">
-                    <div class="homepage__reviews__block">
-                      <div class="text-base"> Lucas  </div>
-                      <div class="text-xs"> Presentation of company X </div>
-                    </div>
-                  </div>
-                </div>
-                <div style='padding-top:60px;'>
-                  <div class="homepage__reviews__text" >ĐÁNH GIÁ CỦA KHÁCH HÀNG</div>
-                  <div class="homepage__reviews__textmini">Dịch vụ hoàn hảo nhất mà tôi từng gặp</div>
-                </div>
-                <div class="homepage__reviews__remark" >
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                </div>
-                <div class="homepage__reviews__describe">Do đó, Tekup sẵn sàng cung cấp thông tin chi tiết và bằng chứng dựa trên dữ liệu để hiện thực hóa các giải pháp kỹ thuật số hiệu quả cho doanh nghiệp của bạn.
-                </div>
-              </div>
-              <div class="homepage__reviews__mySlides">
-                <div class="homepage__reviews__p-4 " >
-                  <div class="homepage__reviews__flex ">
-                    <img src="/images/Ellipse 5.png" alt="" class="w-10 rounded-full">
-                    <div class="homepage__reviews__block">
-                      <div class="text-base"> Jason Cha </div>
-                      <div class="text-xs"> CEO of company Y </div>
-                    </div>
-                  </div>
-                </div>
-                <div style='padding-top:60px;'>
-                  <div class="homepage__reviews__text" >ĐÁNH GIÁ CỦA KHÁCH HÀNG</div>
-                  <div class="homepage__reviews__textmini">Dịch vụ hoàn hảo nhất mà tôi từng gặp</div>
-                </div>
-                <div class="homepage__reviews__remark" >
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                </div>
-                <div class="homepage__reviews__describe">Do đó, Tekup sẵn sàng cung cấp thông tin chi tiết và bằng chứng dựa trên dữ liệu để hiện thực hóa các giải pháp kỹ thuật số hiệu quả cho doanh nghiệp của bạn.
-                </div>
-              </div>
-            </div>
-            <br>
-            <div >
-              <span class="homepage__reviews__dot" onclick="currentSlide(1)"></span>
-              <span class="homepage__reviews__dot" onclick="currentSlide(2)"></span>
-              <span class="homepage__reviews__dot" onclick="currentSlide(3)"></span>
-            </div>
+          <br />
+          <div>
+            <span
+              class="homepage__reviews__dot"
+              onclick="currentSlide(1)"
+            ></span>
+            <span
+              class="homepage__reviews__dot"
+              onclick="currentSlide(2)"
+            ></span>
+            <span
+              class="homepage__reviews__dot"
+              onclick="currentSlide(3)"
+            ></span>
           </div>
         </div>
-      </section> -->
+      </div>
+    </section>
     <section
       class="homepage__contact__container d-flex justify-content-center px-3"
     >
@@ -846,7 +907,7 @@
 
   <script src="./js/script.js"></script>
   <!--Carousel-->
-  <script src="js/jquery.min.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
