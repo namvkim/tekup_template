@@ -63,10 +63,10 @@ if (document.getElementById('homepage')) {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace("activeperfect", "");
+      dots[i].className = dots[i].className.replace("homepage__reviews__dot__active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " activeperfect";
+    dots[slideIndex - 1].className += " homepage__reviews__dot__active";
     setTimeout(showSlides, 2000);
   }
 
