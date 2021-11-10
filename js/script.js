@@ -1,96 +1,115 @@
-// carosel for logo in banner (nam)
-let items = document.querySelectorAll(
-  '.hompage__banner__logo .carousel .carousel-item'
-);
+if (document.getElementById('menu__container')) {
 
-items.forEach((el) => {
-  const minPerSlide = 5;
-  let next = el.nextElementSibling;
-  for (var i = 1; i < minPerSlide; i++) {
-    if (!next) {
-      // wrap carousel by using first child
-      next = items[0];
+  //menu scroll
+  function menuScroll() {
+    if (window.scrollY > 0) {
+      document.getElementById('menu__container').style.backgroundColor = "white";
+      document.getElementById('menu__container').style.boxShadow = "0 0 9px rgb(0 0 0 / 15%)";
+    } else {
+      document.getElementById('menu__container').style.backgroundColor = "";
+      document.getElementById('menu__container').style.boxShadow = "";
     }
-    let cloneChild = next.cloneNode(true);
-    el.appendChild(cloneChild.children[0]);
-    next = next.nextElementSibling;
   }
-});
 
-//start Hoa write carosel for perfect service
-var slideIndex = 0;
-showSlides();
+  window.addEventListener('scroll', menuScroll);
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName('homepage__reviews__mySlides');
-  var dots = document.getElementsByClassName('homepage__reviews__dot');
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace('activeperfect', '');
-  }
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' activeperfect';
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  if (document.getElementById('homepage')) {
+    document.getElementById('menu_homepage').style.backgroundColor = "#f8d000";
+  } else if (document.getElementById('about')) {
+    document.getElementById('menu_about').style.backgroundColor = "#f8d000";
+  } else if (document.getElementById('project')) {
+    document.getElementById('menu_project').style.backgroundColor = "#f8d000";
+  } else if (document.getElementById('service')) {
+    document.getElementById('menu_service').style.backgroundColor = "#f8d000";
+  } else if (document.getElementById('contact')) {
+    document.getElementById('menu_contact').style.backgroundColor = "#f8d000";
+  };
+
 }
-//end Hoa write
 
-// services quynh
-alert(' nhu quynh');
-$(document).ready(function () {
-  $('.counter').each(function () {
-    $(this)
-      .prop('Counter', 0)
-      .animate(
-        {
-          Counter: $(this).text(),
-        },
-        {
-          duration: 4000,
-          easing: 'swing',
-          step: function (now) {
-            $(this).text(Math.ceil(now));
-          },
-        }
-      );
-  });
-});
+if (document.getElementById('homepage')) {
 
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName(
-    'homepage__services__tabcontent'
+  // carosel for logo in banner (nam)
+  let items = document.querySelectorAll(
+    ".hompage__banner__logo .carousel .carousel-item"
   );
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = 'none';
+
+  items.forEach((el) => {
+    const minPerSlide = 5;
+    let next = el.nextElementSibling;
+    for (var i = 1; i < minPerSlide; i++) {
+      if (!next) {
+        // wrap carousel by using first child
+        next = items[0];
+      }
+      let cloneChild = next.cloneNode(true);
+      el.appendChild(cloneChild.children[0]);
+      next = next.nextElementSibling;
+    }
+  });
+
+  //carosel for perfect service
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("homepage__reviews__mySlides");
+    var dots = document.getElementsByClassName("homepage__reviews__dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("homepage__reviews__dot__active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " homepage__reviews__dot__active";
+    setTimeout(showSlides, 2000);
   }
-  tablinks = document.getElementsByClassName('tablinks');
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(' active', '');
+
+  // services
+  $(document).ready(function () {
+    $('.homepage__statistics__counter').each(function () {
+      $(this)
+        .prop('homepage__statistics__counter', 0)
+        .animate(
+          {
+            Counter: $(this).text(),
+          },
+          {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            },
+          }
+        );
+    });
+  });
+
+  // tabpane in homepage service
+  $(window).resize(function () {
+    window.location.reload();
+  });
+
+  function openCity(evt, cityName) {
+    if (screen.width > 576) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName(
+        'homepage__services__tabcontent'
+      );
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = 'none';
+      }
+      tablinks = document.getElementsByClassName('tablinks');
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(' active', '');
+      }
+      document.getElementById(cityName).style.display = 'block';
+      evt.currentTarget.className += ' active';
+    }
   }
-  document.getElementById(cityName).style.display = 'block';
-  evt.currentTarget.className += ' active';
+  document.getElementById('defaultOpen').click();
 }
-
-document.getElementById('defaultOpen').click();
-
-//menu scroll
-
-function menuScroll() {
-  if (window.scrollY > 0) {
-    document.getElementById('menu__container').style.backgroundColor = 'white';
-    document.getElementById('menu__container').style.boxShadow =
-      '0 0 9px rgb(0 0 0 / 15%)';
-  } else {
-    document.getElementById('menu__container').style.backgroundColor = '';
-    document.getElementById('menu__container').style.boxShadow = '';
-  }
-}
-
-window.addEventListener('scroll', menuScroll);
