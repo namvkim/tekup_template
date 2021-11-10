@@ -30,37 +30,55 @@
   <body>
     <section class="contact__container px-3">
       <div class="contact__content">
-        <img src="./images/contact.png" alt="contact" class="contact__image"> 
+        <img src="./images/contact.png" alt="contact" class="contact__image" />
         <form class="contact__form">
           <div class="contact__top">Chúng tôi luôn ở đây để giúp bạn</div>
           <div class="contact__mid">Liên hệ với chúng tôi</div>
-          <div class="contact__title">Tekup cam kết mang lại dịch vụ tốt nhất nhằm giúp doanh nghiệp của bạn phát triển thần tốc</div>
-          <div class="contact__content__form1">
-            <div class="contact__input__group1">
-              <img src="./images/user.jpg" class="contact__icon"></img>
-              <input class="contact__input__style" type="text" placeholder="Tên cá nhân" name="user">
+          <div class="contact__title">
+            Tekup cam kết mang lại dịch vụ tốt nhất nhằm giúp doanh nghiệp của
+            bạn phát triển thần tốc
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="contact__input__group me-3 w-50">
+              <img src="./images/contact_icon_user.svg" />
+              <input
+                class="contact__input__style"
+                type="text"
+                placeholder="Tên cá nhân"
+                name="user"
+              />
             </div>
-            <div class="contact__input__group2">
-              <img src="./images/phone.jpg" class="contact__icon"></img>
-              <input class="contact__input__style" type="phone" placeholder="Số điện thoại" name="phone">
+            <div class="contact__input__group ms-3 w-50">
+              <img src="./images/phone.jpg" />
+              <input
+                class="contact__input__style"
+                type="phone"
+                placeholder="Số điện thoại"
+                name="phone"
+              />
             </div>
           </div>
-          <div class="contact__content__form2">
-            <div class="contact__select">
-              <div><img src="./images/type.jpg" class="contact__icon"></img></div>
-                <select id="contact__select__box">
-                  <option>Lĩnh vực quan tâm</option>
-                  <option>Trí tuệ nhân tạo & Tầm nhìn máy tính</option>
-                  <option>Phát triển ứng dụng di động và web</option>
-                  <option>Tư vấn quản lý</option>
-                </select>
-              </div>
-            </div>
-          <div class="contact__content__form3">
-                <img src="./images/note.jpg" class="contact__icon"></img>
-              <input class="contact__input__style" type="text" placeholder="Lời nhắn" name="note">
+          <div class="contact__input__group">
+            <img src="./images/type.jpg" />
+            <select class="contact__input__style">
+              <option>Lĩnh vực quan tâm</option>
+              <option>Trí tuệ nhân tạo & Tầm nhìn máy tính</option>
+              <option>Phát triển ứng dụng di động và web</option>
+              <option>Tư vấn quản lý</option>
+            </select>
           </div>
-          <button class="contact__btn__warning" type="submit">Gửi tin nhắn</button>
+          <div class="contact__input__group">
+            <img src="./images/note.jpg" />
+            <input
+              class="contact__input__style"
+              type="text"
+              placeholder="Lời nhắn"
+              name="note"
+            />
+          </div>
+          <button class="contact__btn__warning" type="submit">
+            Gửi tin nhắn
+          </button>
         </form>
       </div>
     </section>
