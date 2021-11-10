@@ -1572,12 +1572,8 @@ body {
 /* end about IT development quynh*/
 
 /* Start about us Hoa */
-
 .about__title__container {
   padding: 207px 0 80px 0;
-  display: flex;
-  justify-content: center;
-  position: relative;
 }
 
 .about__title__img {
@@ -1587,6 +1583,7 @@ body {
   left: 0;
   width: 100%;
   z-index: -1;
+  opacity: 0.2;
 }
 
 .about__title__content {
@@ -1624,6 +1621,7 @@ body {
   font-size: 24px;
   line-height: 34px;
   letter-spacing: -0.01em;
+  margin-bottom: 30px;
 }
 
 .about__title__body__content {
@@ -1633,26 +1631,13 @@ body {
 
 .about__value__container {
   padding: 160px 0;
-
+  text-align: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  display: flex;
-  justify-content: center;
-
-  background: linear-gradient(
-      0deg,
-      rgba(11, 13, 39, 0.8),
-      rgba(11, 13, 39, 0.8)
-    ),
+  background: linear-gradient(0deg, rgba(11, 13, 39, 0), rgba(11, 13, 39, 0)),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/aboutbg.png");
-}
-
-.about__value__content {
-  color: white;
-  text-align: center;
 }
 
 .about__value__title {
@@ -1674,17 +1659,16 @@ body {
 .about__direction__container {
   display: flex;
   justify-content: center;
+  padding: 100px 0;
 }
 
 .about__direction__content {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0;
   width: 1170px;
 }
 
-.about__direction__left,
-.about__direction__right {
+.about__direction__item {
   width: 500px;
   text-align: center;
 }
@@ -1694,13 +1678,88 @@ body {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: -0.01em;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .about__direction__subtitle {
   font-size: 18px;
   line-height: 28px;
   margin-top: 16px;
+}
+
+@media only screen and (max-width: 576px) {
+  .about__title__container {
+    padding: 167px 0 40px 0;
+  }
+
+  .about__title__img,
+  .about__title__content {
+    width: 100%;
+  }
+
+  .about__title__header {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 60px;
+  }
+
+  .about__title__body {
+    display: block;
+  }
+
+  .about__title__body__left {
+    font-size: 36px;
+    line-height: 44px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .about__title__body__right {
+    width: 100%;
+  }
+
+  .about__title__body__title {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: justify;
+  }
+
+  .about__title__body__content {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+  }
+
+  .about__value__container {
+    padding: 70px 0;
+  }
+
+  .about__value__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 32px;
+  }
+
+  .about__direction__container {
+    padding: 30px 0 70px 0;
+  }
+
+  .about__direction__content {
+    display: block;
+    width: 100%;
+  }
+
+  .about__direction__item {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .about__direction__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 16px;
+  }
 }
 /* End about us Hoa
 /*-------------------------------------- Project --------------------------------------*/
