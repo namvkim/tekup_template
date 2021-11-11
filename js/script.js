@@ -1,3 +1,32 @@
+if (document.getElementById('menu__container')) {
+
+  //menu scroll
+  function menuScroll() {
+    if (window.scrollY > 0) {
+      document.getElementById('menu__container').style.backgroundColor = "white";
+      document.getElementById('menu__container').style.boxShadow = "0 0 9px rgb(0 0 0 / 15%)";
+    } else {
+      document.getElementById('menu__container').style.backgroundColor = "";
+      document.getElementById('menu__container').style.boxShadow = "";
+    }
+  }
+
+  window.addEventListener('scroll', menuScroll);
+
+  if (document.getElementById('homepage')) {
+    document.getElementById('menu_homepage').style.backgroundColor = "#f8d000";
+  } else if (document.getElementById('about')) {
+    document.getElementById('menu_about').style.backgroundColor = "#f8d000";
+  } else if (document.getElementById('project')) {
+    document.getElementById('menu_project').style.backgroundColor = "#f8d000";
+  } else if (document.getElementById('service')) {
+    document.getElementById('menu_service').style.backgroundColor = "#f8d000";
+  } else if (document.getElementById('contact')) {
+    document.getElementById('menu_contact').style.backgroundColor = "#f8d000";
+  };
+
+}
+
 if (document.getElementById('homepage')) {
 
   // carosel for logo in banner (nam)
@@ -33,18 +62,18 @@ if (document.getElementById('homepage')) {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace("activeperfect", "");
+      dots[i].className = dots[i].className.replace("homepage__reviews__dot__active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " activeperfect";
+    dots[slideIndex - 1].className += " homepage__reviews__dot__active";
     setTimeout(showSlides, 2000);
   }
 
   // services
   $(document).ready(function () {
-    $('.counter').each(function () {
+    $('.homepage__statistics__counter').each(function () {
       $(this)
-        .prop('Counter', 0)
+        .prop('homepage__statistics__counter', 0)
         .animate(
           {
             Counter: $(this).text(),
@@ -60,50 +89,27 @@ if (document.getElementById('homepage')) {
     });
   });
 
+  // tabpane in homepage service
+  $(window).resize(function () {
+    window.location.reload();
+  });
+
   function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName(
-      'homepage__services__tabcontent'
-    );
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = 'none';
+    if (screen.width > 576) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName(
+        'homepage__services__tabcontent'
+      );
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = 'none';
+      }
+      tablinks = document.getElementsByClassName('tablinks');
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(' active', '');
+      }
+      document.getElementById(cityName).style.display = 'block';
+      evt.currentTarget.className += ' active';
     }
-    tablinks = document.getElementsByClassName('tablinks');
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(' active', '');
-    }
-    document.getElementById(cityName).style.display = 'block';
-    evt.currentTarget.className += ' active';
   }
   document.getElementById('defaultOpen').click();
-
-}
-
-if (document.getElementById('menu__container')) {
-
-  //menu scroll
-  function menuScroll() {
-    if (window.scrollY > 0) {
-      document.getElementById('menu__container').style.backgroundColor = "white";
-      document.getElementById('menu__container').style.boxShadow = "0 0 9px rgb(0 0 0 / 15%)";
-    } else {
-      document.getElementById('menu__container').style.backgroundColor = "";
-      document.getElementById('menu__container').style.boxShadow = "";
-    }
-  }
-
-  window.addEventListener('scroll', menuScroll);
-
-  if (document.getElementById('homepage')) {
-    document.getElementById('menu_homepage').style.backgroundColor = "#f8d000";
-  } else if (document.getElementById('about')) {
-    document.getElementById('menu_about').style.backgroundColor = "#f8d000";
-  } else if (document.getElementById('project')) {
-    document.getElementById('menu_project').style.backgroundColor = "#f8d000";
-  } else if (document.getElementById('service')) {
-    document.getElementById('menu_service').style.backgroundColor = "#f8d000";
-  } else if (document.getElementById('contact')) {
-    document.getElementById('menu_contact').style.backgroundColor = "#f8d000";
-  };
-
 }
