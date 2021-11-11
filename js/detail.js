@@ -20,6 +20,10 @@ $(".other_project_carousel").owlCarousel(
           items: 1,
           dots: false
         },
+        280:{
+            items: 1,
+          dots: false
+        },
         485: {
           items: 1,
           dots: false
