@@ -69,26 +69,6 @@ if (document.getElementById('homepage')) {
     setTimeout(showSlides, 2000);
   }
 
-  // services
-  $(document).ready(function () {
-    $('.homepage__statistics__counter').each(function () {
-      $(this)
-        .prop('homepage__statistics__counter', 0)
-        .animate(
-          {
-            Counter: $(this).text(),
-          },
-          {
-            duration: 4000,
-            easing: 'swing',
-            step: function (now) {
-              $(this).text(Math.ceil(now));
-            },
-          }
-        );
-    });
-  });
-
   // tabpane in homepage service
   $(window).resize(function () {
     window.location.reload();
@@ -112,4 +92,27 @@ if (document.getElementById('homepage')) {
     }
   }
   document.getElementById('defaultOpen').click();
+}
+
+if (document.getElementById('homepage') || document.getElementById('about')) {
+
+  $(document).ready(function () {
+    $('.homepage__statistics__counter').each(function () {
+      $(this)
+        .prop('homepage__statistics__counter', 0)
+        .animate(
+          {
+            Counter: $(this).text(),
+          },
+          {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            },
+          }
+        );
+    });
+  });
+
 }
