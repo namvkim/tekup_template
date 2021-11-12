@@ -1400,14 +1400,17 @@ body {
     padding: 167px 0 40px 0;
   }
 
-  .about__title__img,
+  .about__title__img {
+    width: 100%;
+    height: 600px;
+  }
   .about__title__content {
     width: 100%;
   }
 
   .about__title__header {
     font-size: 48px;
-    line-height: 56px;
+    line-height: 58px;
     margin-bottom: 112px;
     height: 168px;
   }
@@ -1429,14 +1432,15 @@ body {
   }
 
   .about__title__body__title {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 26px;
     text-align: justify;
+    margin-bottom: 24px;
   }
 
   .about__title__body__content {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 26px;
     text-align: justify;
   }
 
@@ -1451,7 +1455,7 @@ body {
   }
 
   .about__direction__container {
-    padding: 30px 0 70px 0;
+    padding: 0 16px 40px 16px;
   }
 
   .about__direction__content {
@@ -1568,12 +1572,13 @@ body {
 
   .about__gallery__content {
     width: 100%;
-    margin: 60px 0;
+    margin: 40px 0;
   }
   .about__gallery__title {
     width: 100%;
     font-size: 36px;
     line-height: 44px;
+    margin-bottom: 40px;
   }
   .about__gallery__img__1 {
     width: 100%;
@@ -1588,6 +1593,16 @@ body {
   .about__gallery__staff__item {
     width: 50%;
     text-align: center;
+    margin-top: 32px;
+  }
+
+  .about__gallery__staff__position {
+    margin-top: 16px;
+    line-height: 26px;
+  }
+
+  .about__gallery__staff__name {
+    line-height: 26px;
   }
 
   .about__statistics__container {
@@ -1596,9 +1611,11 @@ body {
   .about__statistics__title {
     font-size: 36px;
     line-height: 44px;
+    width: 250px;
   }
   .about__statistics__content {
     width: 100%;
+    padding-top: 16px;
   }
   .about__statistics__box {
     width: 48%;
