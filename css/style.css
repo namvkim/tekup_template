@@ -1146,11 +1146,6 @@ body {
 .home__contact__button img {
   margin-left: 10px;
 }
-/*Query media for contact*/
-@media only screen and (max-width: 1920px) {
-  .home__contact__title h2 {
-    font-size: 64px;
-    line-height: 74px;
 
 @media only screen and (max-width: 576px) {
   .homepage__contact__content {
@@ -1166,55 +1161,6 @@ body {
     margin-top: 40px;
   }
 }
-
-@media only screen and (max-width: 600px){
-  .home__contact__title h2 {
-    line-height: 50px;
-    font-size: 40px;
-  }
-  .home__contact__button a {
-    width: 289.83px;
-    font-size: 18px;
-    padding: 16px 18px;
-  }
-}
-@media only screen and (max-width: 441px){
-  .home__contact__title h2 {
-    font-size: 35px;
-    line-height: 40px;
-  }
-}
-@media only screen and (max-width: 414px){
-  .home__contact__title h2 {
-    font-size: 30px;
-  }
-  .home__contact__button a {
-    width: 250.83px;
-    font-size: 16px;
-    padding: 16px 12px;
-  }
-}
-@media only screen and (max-width: 320px){
-  .home__contact__title h2 {
-    font-size: 25px;
-    line-height: 35px;
-  }
-}
-@media only screen and (max-width: 280px){
-  .home__contact__title h2 {
-    font-size: 20px;
-    line-height: 35px;
-  }
-  .home__contact__button a {
-    width: 190.83px;
-    font-size: 10px;
-    padding: 14px 14px;
-  }
-  .home__contact__button a img {
-    padding-left: 7px;
-  }
-}
-
 
 /*-------------------------------------- Contact --------------------------------------*/
 
@@ -1897,7 +1843,6 @@ body {
     font-size: 18px;
     line-height: 24px;
   }
-
   .service__types__container {
     padding: 0 16px;
     width: 100%;
@@ -1908,7 +1853,6 @@ body {
     flex-wrap: wrap;
     width: 100%;
   }
-
   .service__Types {
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -1936,7 +1880,6 @@ body {
     line-height: 24px;
     padding-bottom: 30px;
   }
-
   .service__Types2 {
     display: flex;
     flex-wrap: wrap;
@@ -1947,7 +1890,6 @@ body {
   .service__Types__img2 > img {
     width: 100%;
   }
-
   .service__Types__text2 {
     display: flex;
     justify-content: center;
@@ -2030,7 +1972,6 @@ body {
     display: flex;
     width: 100%;
   }
-
   #service__select__box {
     width: 100%;
     font-size: 12px;
@@ -2119,7 +2060,6 @@ body {
   .service__Types__img2 > img {
     width: 100%;
   }
-
   .service__Types__text2 {
     display: flex;
     justify-content: center;
@@ -2202,7 +2142,6 @@ body {
     display: flex;
     width: 100%;
   }
-
   #service__select__box {
     width: 100%;
     font-size: 12px;
@@ -2291,7 +2230,6 @@ body {
   .service__Types__img2 > img {
     width: 100%;
   }
-
   .service__Types__text2 {
     display: flex;
     justify-content: center;
@@ -2374,7 +2312,6 @@ body {
     display: flex;
     width: 100%;
   }
-
   #service__select__box {
     width: 100%;
     font-size: 12px;
@@ -2402,7 +2339,6 @@ body {
     width: 100%;
     padding: 80px 0 0 0;
   }
-
   .service__types__container {
     padding: 0 16px;
     width: 100%;

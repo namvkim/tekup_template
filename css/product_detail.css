@@ -344,15 +344,15 @@
   .project__content{
     padding-top: 0;
   }
-  .project__image__2{
+  /* .project__image__2{
     display: none;
-  }
+  } */
   .project__content .text__title h2{
     font-size: 30px;
   }
   .project__content .text__title h5{
     font-size: 16px;
-    padding-top: 16px;
+    /* padding-top: 8px; */
   }
   .text__inform .text h6{
     font-size: 16px;
@@ -391,12 +391,9 @@
   .other__project_content{
     width: 100%;
   }
-  .other__project_content h2{
-    margin-left: 0px;
-  }
   .owl-prev, .owl-next{
     position: absolute;
-    top: 30px;
+    top: 120px;
   }
   .owl-prev { 
     left: -12px;
@@ -430,9 +427,6 @@
   .other__project_content{
     width: 100%;
   }
-  .project__content .text__title h2{
-    font-size: 35px;
-  }
   .project__image__2{
     display: none;
   }
@@ -447,9 +441,6 @@
   }
   .other__project_content{
     width: 100%;
-  }
-  .project__content .text__title h2{
-    font-size: 35px;
   }
   .project__image__2{
     display: none;
@@ -467,14 +458,11 @@
   .other__project_content{
     width: 100%;
   }
-  .project__content .text__title h2{
-    font-size: 35px;
-  }
   .project__image__2{
     display: none;
   }
   .project__content .text__title h5{
-    margin-top: -15px;
+    margin-top: -10px;
   }
   .owl-prev, .owl-next{
     position: absolute;
@@ -510,9 +498,6 @@
   }
   .other__project_content{
     width: 100%;
-  }
-  .project__content .text__title h2{
-    font-size: 35px;
   }
   .project__image__2{
     display: none;
