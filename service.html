@@ -27,7 +27,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body id="service">
     <section class="menu__container w-100 position-fixed" id="menu__container">
       <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
@@ -160,13 +160,31 @@
         <div class="menu__overlay"></div>
       </div>
     </section>
-    <section class="service__banner__container">
+    <section
+      class="
+        service__banner__container
+        d-flex
+        flex-column
+        align-items-center
+        position-relative
+        px-3
+      "
+    >
       <img
         src="./images/background_dot3d.gif"
         class="service__banner__img"
         alt=""
       />
-      <div class="service__text__top">Dịch vụ</div>
+      <div
+        class="
+          service__text__top
+          d-flex
+          justify-content-center
+          align-items-center
+        "
+      >
+        Dịch vụ
+      </div>
       <div class="service__text__title">
         “TekUp là đối tác tin cậy của bạn trên con đường thay đổi - cho dù bạn
         là ai, bạn thuộc ngành nào. Chúng tôi cống hiến để cung cấp các giải
@@ -174,7 +192,7 @@
         thực sự và cá nhân hóa - chỉ dành cho bạn”
       </div>
     </section>
-    <section class="service__types__container">
+    <section class="service__types__container px-3">
       <div class="service__Types__content">
         <div class="service__Types">
           <img src="./images/service.png" alt="" class="service__Types__img" />
@@ -189,7 +207,7 @@
             </div>
           </div>
         </div>
-        <div class="service__Types">
+        <div class="service__Types service__Types__reverse">
           <div class="service__Types__text">
             <div class="service__Types__top">
               Phát triển ứng dụng di động và web
@@ -215,7 +233,7 @@
         </div>
       </div>
     </section>
-    <section class="service__contact__container">
+    <section class="service__contact__container px-3">
       <form class="contact__form">
         <div class="contact__top">Chúng tôi luôn ở đây để giúp bạn</div>
         <div class="contact__mid">Liên hệ với chúng tôi</div>
@@ -243,7 +261,7 @@
             />
           </div>
         </div>
-        <div class="contact__input__group">
+        <div class="contact__input__group w-100">
           <img src="./images/type.jpg" />
           <select class="contact__input__style">
             <option>Lĩnh vực quan tâm</option>
@@ -252,7 +270,7 @@
             <option>Tư vấn quản lý</option>
           </select>
         </div>
-        <div class="contact__input__group">
+        <div class="contact__input__group w-100">
           <img src="./images/note.jpg" />
           <input
             class="contact__input__style"
