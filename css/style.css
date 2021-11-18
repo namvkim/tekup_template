@@ -733,10 +733,10 @@ body {
 }
 
 /* 05. Outstanding Project */
-/* 
+
 .homepage__project__container {
-  margin-bottom: 186px;
-} */
+  padding-bottom: 186px;
+}
 
 .homepage__project__title__box {
   width: 838px;
@@ -755,6 +755,38 @@ body {
   font-size: 64px;
   line-height: 74px;
   font-weight: 700;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.gallery-top {
+  height: 704px;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  margin-top: -71px;
+  box-sizing: border-box;
+}
+
+.swiper-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 160px;
+  height: 100%;
+  opacity: 0.4;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
 }
 
 .homepage___project__item {
@@ -834,15 +866,14 @@ body {
 .homepage___project__tablist__container {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
-.homepage___project__tablst__content {
+.homepage___project__tablist {
+  position: absolute;
   width: 1170px;
   height: 186px;
-}
-.homepage___project__tablist {
   top: -52px;
-  left: 0;
 }
 
 .homepage___project__tab {
@@ -870,12 +901,14 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
+  .homepage__project__container {
+    padding-bottom: 0;
+  }
   .homepage__project__title__box {
     display: none;
   }
 
   .homepage___project__item {
-    height: auto;
     padding: 0 16px 121px 16px;
   }
 
@@ -896,6 +929,7 @@ body {
     top: -42px;
     transform: none;
     height: 310px;
+    z-index: 30;
   }
 
   .homepage__project__item__box {

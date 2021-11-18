@@ -1,3 +1,7 @@
+$(window).resize(function () {
+  window.location.reload();
+});
+
 if (document.getElementById('menu__container')) {
 
   //menu scroll
@@ -70,10 +74,6 @@ if (document.getElementById('homepage')) {
   }
 
   // tabpane in homepage service
-  $(window).resize(function () {
-    window.location.reload();
-  });
-
   function openCity(evt, cityName) {
     if (screen.width > 576) {
       var i, tabcontent, tablinks;
@@ -92,6 +92,45 @@ if (document.getElementById('homepage')) {
     }
   }
   document.getElementById('defaultOpen').click();
+
+  if (screen.width < 576) {
+    document
+      .getElementById("swiper-container")
+      .classList.add("swiper-container");
+    document.getElementById("gallery-top").classList.add("gallery-top");
+    document
+      .querySelector(".tab-content")
+      .classList.replace("tab-content", "swiper-wrapper");
+    var tabPane = document.querySelectorAll(".tab-pane");
+    for (i = 0; i < tabPane.length; i++) {
+      tabPane[i].classList.remove("fade");
+      tabPane[i].classList.replace("tab-pane", "swiper-slide");
+    }
+
+    document.querySelector(".homepage___project__tablist__container").classList.replace("homepage___project__tablist__container", "gallery-thumbs");
+    document.querySelector(".homepage___project__tablist").classList.remove("nav");
+    document.querySelector(".homepage___project__tablist").classList.replace("homepage___project__tablist", "swiper-wrapper");
+    var proTab = document.querySelectorAll(".homepage___project__tab");
+    for (i = 0; i < proTab.length; i++) {
+      proTab[i].classList.add("swiper-slide");
+    }
+
+    var galleryTop = new Swiper(".gallery-top", {
+      nextButton: ".swiper-button-next",
+      prevButton: ".swiper-button-prev",
+      spaceBetween: 10,
+      keyboardControl: true,
+    });
+    var galleryThumbs = new Swiper(".gallery-thumbs", {
+      spaceBetween: 10,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      touchRatio: 0.2,
+      slideToClickedSlide: true,
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
+  }
 }
 
 if (document.getElementById('homepage') || document.getElementById('about')) {
