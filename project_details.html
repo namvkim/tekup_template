@@ -24,10 +24,11 @@
      <!-- Style -->
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/product_detail.css">
-     <!--PhotoSwipe-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
+          <!-- Photoswipe CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
      <title>Product Detail</title>
+     </head>
   <body>
     <section class="menu__container w-100 position-fixed" id="menu__container">
       <div class="d-flex justify-content-between align-items-center">
@@ -162,12 +163,12 @@
       </div>
     </section>
     <section class="detailpage__section">
-      <div class="container">
+      <div class="container-fluid detailpage_container">
         <div class="row project__image">
           <div class="col-sm-6">
-            <div class="row my-gallery">
+            <div class="row my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
               <div class="col-lg-7 project__image__1">
-                <figure class="figure">
+                <figure class="figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="images/project_1.png" itemprop="contentUrl" data-size="1024x1024">
                     <img src="images/project_1.png" itemprop="thumbnail" alt="Image project 1"
                     class="figure-img img-fluid rounded"  />
@@ -176,7 +177,7 @@
                 </figure>
               </div>
               <div class="col-lg-5 project__image__2">
-                <figure class="w-100 shadow-1-strong rounded">
+                <figure class="w-100 shadow-1-strong rounded" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="images/project_2.png" itemprop="contentUrl" data-size="1024x1024">
                     <img
                       src="images/project_2.png"
@@ -187,7 +188,7 @@
                   </a>
                   <figcaption itemprop="caption description">Project Image 2</figcaption>
                 </figure>
-                <figure class="figure">
+                <figure class="figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="images/project_3.png" itemprop="contentUrl" data-size="1024x1024">
                     <img
                       src="images/project_3.png"
@@ -222,8 +223,9 @@
                   <li>.Node js .React .Flutter .Laverel</li>
                 </ul>
               </div>
+              
               <div class="project_detail_link">
-                <a href="#">Truy cập trang web</a>
+                <button class="button"><a href="#">Truy cập trang web</a></button>
               </div>
             </div>
           </div>
@@ -297,6 +299,7 @@
 
     </div>
     <section>
+      
       <!--***** PHOTOSWIPE *****-->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="pswp__bg"></div>
@@ -424,5 +427,5 @@
     <!-- PhotoSwipe JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
-  </body>
+  
 </html>
