@@ -1,3 +1,5 @@
+// "use strict";
+
 $(window).resize(function () {
   window.location.reload();
 });
@@ -154,4 +156,36 @@ if (document.getElementById('homepage') || document.getElementById('about')) {
     });
   });
 
+}
+
+if (document.getElementById('pro__details')) {
+  $(function () {
+
+    if ($('.pro__details__carousel__main').length > 0) {
+      $(".pro__details__carousel__main").owlCarousel(
+        {
+          autoplay: true,
+          autoplayhoverpause: true,
+          autoplaytimeout: 100,
+          items: 1,
+          responsiveClass: true,
+          nav: true,
+          loop: true,
+          animateOut: 'fadeOut',
+          lazyLoad: true,
+          margin: 30,
+          responsive: {
+            0: {
+              items: 1,
+              dots: false
+            },
+            576: {
+              items: 3,
+              dots: false
+            }
+          }
+        }
+      );
+    }
+  });
 }

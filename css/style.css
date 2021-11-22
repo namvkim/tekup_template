@@ -1783,6 +1783,243 @@ body {
 }
 
 /*-------------------------------------- Project Details --------------------------------------*/
+
+.pro__details__main__content {
+  display: flex;
+  width: 1680px;
+  margin-top: 218px;
+}
+
+.pro__details__main__left {
+  width: 819px;
+}
+.pro__details__img__1 {
+  width: 478px;
+  height: 637px;
+  float: left;
+}
+.pro__details__img__2 {
+  width: 311px;
+  height: 210px;
+  float: left;
+  margin-left: 30px;
+}
+.pro__details__img__3 {
+  width: 311px;
+  height: 397px;
+  float: left;
+  margin: 30px 0 0 30px;
+}
+.photos .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#lightbox {
+  height: 100vh;
+  top: 0 !important;
+}
+
+.lb-outerContainer {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+}
+
+.lb-image {
+  min-width: 500px !important;
+  min-height: 500px !important;
+}
+
+.lb-dataContainer {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.lb-number {
+  display: none !important;
+}
+
+.pro__details__main__right {
+  width: 755px;
+  padding-right: 255px;
+}
+
+.pro__details__main__right a {
+  color: #0b0d27;
+  text-decoration: none;
+}
+
+.pro__details__main__title {
+  font-size: 64px;
+  line-height: 74px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.pro__details__main__sub {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+.pro__details__main__title2 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.pro__details__main__sub2 {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.pro__details__main__btn {
+  width: 230px;
+  height: 44px;
+  border: 1px solid #0b0d27;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pro__details__main__btn__title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 576px) {
+  .pro__details__main__content {
+    display: block;
+    width: 100%;
+    margin-top: 88px;
+  }
+  .pro__details__main__left {
+    width: 100%;
+  }
+  .lb-outerContainer {
+    width: 100% !important;
+  }
+  .pro__details__img__1 {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .pro__details__img__2,
+  .pro__details__img__3 {
+    display: none;
+  }
+  .lb-image {
+    min-width: 0 !important;
+    min-height: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .lb-dataContainer {
+    top: 8px;
+    right: 8px;
+  }
+  .lb-nav a.lb-prev,
+  .lb-nav a.lb-next {
+    opacity: 1 !important;
+  }
+
+  .pro__details__main__right {
+    width: 100%;
+    padding-right: 0;
+  }
+  .pro__details__main__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 24px;
+  }
+  .pro__details__main__sub {
+    margin-bottom: 20px;
+  }
+}
+
+/*  Another Product */
+.pro__details__carousel__container {
+  padding: 160px 0 100px 0;
+}
+
+.pro__details__carousel__content {
+  width: 1170px;
+}
+
+.pro__details__carousel__title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding-bottom: 20px;
+}
+
+.pro__details__carousel__main img {
+  object-fit: cover;
+}
+
+.pro__details__carousel__item {
+  width: 370px;
+}
+
+.pro__details__carousel__item__title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.pro__details__carousel__item__sub {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.pro__details__carousel__main .owl-prev {
+  position: absolute;
+  left: -32px;
+  top: 75px;
+}
+.pro__details__carousel__main .owl-next {
+  position: absolute;
+  right: -32px;
+  top: 75px;
+}
+
+.pro__details__carousel__main .owl-prev span,
+.pro__details__carousel__main .owl-next span {
+  font-size: 64px;
+  font-weight: 100;
+  color: #000000;
+}
+
+@media only screen and (max-width: 576px) {
+  .pro__details__carousel__container {
+    padding: 70px 0;
+  }
+  .pro__details__carousel__content,
+  .pro__details__carousel__item {
+    width: 100%;
+  }
+
+  .pro__details__carousel__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .pro__details__carousel__main .owl-prev {
+    left: 0;
+  }
+
+  .pro__details__carousel__main .owl-next {
+    right: 0;
+  }
+}
+
 /*-------------------------------------- Service --------------------------------------*/
 
 .service__banner__container {
